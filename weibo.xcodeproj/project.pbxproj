@@ -13,6 +13,10 @@
 		B31486221C5CA7F200D43094 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31486201C5CA7F200D43094 /* LaunchScreen.storyboard */; };
 		B314862D1C5CA7F200D43094 /* weiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B314862C1C5CA7F200D43094 /* weiboTests.m */; };
 		B31486381C5CA7F200D43094 /* weiboUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B31486371C5CA7F200D43094 /* weiboUITests.m */; };
+		B31486471C5CAF8300D43094 /* TTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B31486461C5CAF8300D43094 /* TTTabBarController.m */; };
+		B3C812F91C5D98E0002A37C5 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C812F81C5D98E0002A37C5 /* UIImage+Image.m */; };
+		B3C812FB1C5DB946002A37C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C812FA1C5DB946002A37C5 /* UIKit.framework */; };
+		B3C812FE1C5DDA95002A37C5 /* TTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C812FD1C5DDA95002A37C5 /* TTTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,13 @@
 		B31486331C5CA7F200D43094 /* weiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31486371C5CA7F200D43094 /* weiboUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weiboUITests.m; sourceTree = "<group>"; };
 		B31486391C5CA7F200D43094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B31486451C5CAF8300D43094 /* TTTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabBarController.h; sourceTree = "<group>"; };
+		B31486461C5CAF8300D43094 /* TTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTabBarController.m; sourceTree = "<group>"; };
+		B3C812F71C5D98E0002A37C5 /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		B3C812F81C5D98E0002A37C5 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		B3C812FA1C5DB946002A37C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B3C812FC1C5DDA95002A37C5 /* TTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabBar.h; sourceTree = "<group>"; };
+		B3C812FD1C5DDA95002A37C5 /* TTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3C812FB1C5DB946002A37C5 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +88,7 @@
 		B31486061C5CA7F200D43094 = {
 			isa = PBXGroup;
 			children = (
+				B3C812FA1C5DB946002A37C5 /* UIKit.framework */,
 				B31486111C5CA7F200D43094 /* weibo */,
 				B314862B1C5CA7F200D43094 /* weiboTests */,
 				B31486361C5CA7F200D43094 /* weiboUITests */,
@@ -98,9 +111,12 @@
 			children = (
 				B31486151C5CA7F200D43094 /* AppDelegate.h */,
 				B31486161C5CA7F200D43094 /* AppDelegate.m */,
-				B314861E1C5CA7F200D43094 /* Assets.xcassets */,
-				B31486201C5CA7F200D43094 /* LaunchScreen.storyboard */,
-				B31486231C5CA7F200D43094 /* Info.plist */,
+				B31486451C5CAF8300D43094 /* TTTabBarController.h */,
+				B31486461C5CAF8300D43094 /* TTTabBarController.m */,
+				B3C812FC1C5DDA95002A37C5 /* TTTabBar.h */,
+				B3C812FD1C5DDA95002A37C5 /* TTTabBar.m */,
+				B3C812F71C5D98E0002A37C5 /* UIImage+Image.h */,
+				B3C812F81C5D98E0002A37C5 /* UIImage+Image.m */,
 				B31486121C5CA7F200D43094 /* Supporting Files */,
 			);
 			path = weibo;
@@ -109,6 +125,9 @@
 		B31486121C5CA7F200D43094 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B314861E1C5CA7F200D43094 /* Assets.xcassets */,
+				B31486201C5CA7F200D43094 /* LaunchScreen.storyboard */,
+				B31486231C5CA7F200D43094 /* Info.plist */,
 				B31486131C5CA7F200D43094 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -194,6 +213,7 @@
 		B31486071C5CA7F200D43094 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TT;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = leo;
 				TargetAttributes = {
@@ -261,6 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B31486471C5CAF8300D43094 /* TTTabBarController.m in Sources */,
+				B3C812F91C5D98E0002A37C5 /* UIImage+Image.m in Sources */,
+				B3C812FE1C5DDA95002A37C5 /* TTTabBar.m in Sources */,
 				B31486171C5CA7F200D43094 /* AppDelegate.m in Sources */,
 				B31486141C5CA7F200D43094 /* main.m in Sources */,
 			);
@@ -480,6 +503,7 @@
 				B314863E1C5CA7F200D43094 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B314863F1C5CA7F200D43094 /* Build configuration list for PBXNativeTarget "weiboTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +512,7 @@
 				B31486411C5CA7F200D43094 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B31486421C5CA7F200D43094 /* Build configuration list for PBXNativeTarget "weiboUITests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +521,7 @@
 				B31486441C5CA7F200D43094 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

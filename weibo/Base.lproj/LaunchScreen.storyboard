@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="ZQG-Df-rbZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="ZQG-Df-rbZ">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                         </subviews>
@@ -26,9 +26,21 @@
                         <constraints>
                             <constraint firstItem="ZQG-Df-rbZ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="2re-XK-wg5"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ZQG-Df-rbZ" secondAttribute="bottom" id="4hc-Ob-1Oy"/>
+                            <constraint firstItem="ZQG-Df-rbZ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="AWz-JS-0l7"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ZQG-Df-rbZ" secondAttribute="bottom" id="BtX-Bc-9je"/>
                             <constraint firstItem="ZQG-Df-rbZ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="Ijs-gF-Qaw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZQG-Df-rbZ" secondAttribute="trailing" constant="-20" id="O2x-1u-oTg"/>
+                            <constraint firstItem="ZQG-Df-rbZ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="hVH-vY-e77"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZQG-Df-rbZ" secondAttribute="trailing" id="oOz-X9-gz3"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2re-XK-wg5"/>
+                                <exclude reference="Ijs-gF-Qaw"/>
+                                <exclude reference="oOz-X9-gz3"/>
+                                <exclude reference="4hc-Ob-1Oy"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

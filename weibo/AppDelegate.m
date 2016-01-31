@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TTTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -20,34 +21,12 @@
     // 创建窗口
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    self.window.backgroundColor = [UIColor whiteColor];
-    
     // 创建tabBarVC
-    UITabBarController *tabBarVC = [[UITabBarController alloc] init];
-    
-    tabBarVC.view.backgroundColor = [UIColor redColor];
-    
-    // 管理子控制器
-    // 首页
-    UIViewController *home = [[UIViewController alloc] init];
-    home.view.backgroundColor = [UIColor greenColor];
-    [tabBarVC addChildViewController:home];
-    // 消息
-    UIViewController *message = [[UIViewController alloc] init];
-    message.view.backgroundColor = [UIColor blueColor];
-    [tabBarVC addChildViewController:message];
-    // 发现
-    UIViewController *discover = [[UIViewController alloc] init];
-    discover.view.backgroundColor = [UIColor purpleColor];
-    [tabBarVC addChildViewController:discover];
-    // 我
-    UIViewController *profile = [[UIViewController alloc] init];
-    profile.view.backgroundColor = [UIColor grayColor];
-    [tabBarVC addChildViewController:profile];
+    TTTabBarController *tabBarVC = [[TTTabBarController alloc] init];
     
     // 设置窗口的根控制器
     self.window.rootViewController = tabBarVC;
-    
+
     // 显示窗口
     [self.window makeKeyAndVisible];
     
