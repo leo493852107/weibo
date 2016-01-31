@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B31486141C5CA7F200D43094 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B31486131C5CA7F200D43094 /* main.m */; };
-		B31486171C5CA7F200D43094 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B31486161C5CA7F200D43094 /* AppDelegate.m */; };
 		B314861F1C5CA7F200D43094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B314861E1C5CA7F200D43094 /* Assets.xcassets */; };
 		B31486221C5CA7F200D43094 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31486201C5CA7F200D43094 /* LaunchScreen.storyboard */; };
 		B314862D1C5CA7F200D43094 /* weiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B314862C1C5CA7F200D43094 /* weiboTests.m */; };
 		B31486381C5CA7F200D43094 /* weiboUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B31486371C5CA7F200D43094 /* weiboUITests.m */; };
-		B31486471C5CAF8300D43094 /* TTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B31486461C5CAF8300D43094 /* TTTabBarController.m */; };
-		B3C812F91C5D98E0002A37C5 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C812F81C5D98E0002A37C5 /* UIImage+Image.m */; };
 		B3C812FB1C5DB946002A37C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C812FA1C5DB946002A37C5 /* UIKit.framework */; };
-		B3C812FE1C5DDA95002A37C5 /* TTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C812FD1C5DDA95002A37C5 /* TTTabBar.m */; };
+		B3C8131F1C5E041F002A37C5 /* TTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C8130B1C5E041F002A37C5 /* TTTabBarController.m */; };
+		B3C813201C5E041F002A37C5 /* TTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C8130F1C5E041F002A37C5 /* TTTabBar.m */; };
+		B3C813211C5E041F002A37C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C813161C5E041F002A37C5 /* AppDelegate.m */; };
+		B3C813221C5E041F002A37C5 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C813191C5E041F002A37C5 /* UIImage+Image.m */; };
+		B3C813231C5E041F002A37C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C8131A1C5E041F002A37C5 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +38,6 @@
 
 /* Begin PBXFileReference section */
 		B314860F1C5CA7F200D43094 /* weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B31486131C5CA7F200D43094 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B31486151C5CA7F200D43094 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B31486161C5CA7F200D43094 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B314861E1C5CA7F200D43094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B31486211C5CA7F200D43094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B31486231C5CA7F200D43094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,13 +47,16 @@
 		B31486331C5CA7F200D43094 /* weiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31486371C5CA7F200D43094 /* weiboUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weiboUITests.m; sourceTree = "<group>"; };
 		B31486391C5CA7F200D43094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B31486451C5CAF8300D43094 /* TTTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabBarController.h; sourceTree = "<group>"; };
-		B31486461C5CAF8300D43094 /* TTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTabBarController.m; sourceTree = "<group>"; };
-		B3C812F71C5D98E0002A37C5 /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
-		B3C812F81C5D98E0002A37C5 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
 		B3C812FA1C5DB946002A37C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		B3C812FC1C5DDA95002A37C5 /* TTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabBar.h; sourceTree = "<group>"; };
-		B3C812FD1C5DDA95002A37C5 /* TTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTabBar.m; sourceTree = "<group>"; };
+		B3C8130A1C5E041F002A37C5 /* TTTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabBarController.h; sourceTree = "<group>"; };
+		B3C8130B1C5E041F002A37C5 /* TTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTabBarController.m; sourceTree = "<group>"; };
+		B3C8130E1C5E041F002A37C5 /* TTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabBar.h; sourceTree = "<group>"; };
+		B3C8130F1C5E041F002A37C5 /* TTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTabBar.m; sourceTree = "<group>"; };
+		B3C813151C5E041F002A37C5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B3C813161C5E041F002A37C5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B3C813181C5E041F002A37C5 /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		B3C813191C5E041F002A37C5 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		B3C8131A1C5E041F002A37C5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,14 +109,7 @@
 		B31486111C5CA7F200D43094 /* weibo */ = {
 			isa = PBXGroup;
 			children = (
-				B31486151C5CA7F200D43094 /* AppDelegate.h */,
-				B31486161C5CA7F200D43094 /* AppDelegate.m */,
-				B31486451C5CAF8300D43094 /* TTTabBarController.h */,
-				B31486461C5CAF8300D43094 /* TTTabBarController.m */,
-				B3C812FC1C5DDA95002A37C5 /* TTTabBar.h */,
-				B3C812FD1C5DDA95002A37C5 /* TTTabBar.m */,
-				B3C812F71C5D98E0002A37C5 /* UIImage+Image.h */,
-				B3C812F81C5D98E0002A37C5 /* UIImage+Image.m */,
+				B3C812FF1C5E041F002A37C5 /* Classes */,
 				B31486121C5CA7F200D43094 /* Supporting Files */,
 			);
 			path = weibo;
@@ -128,7 +121,6 @@
 				B314861E1C5CA7F200D43094 /* Assets.xcassets */,
 				B31486201C5CA7F200D43094 /* LaunchScreen.storyboard */,
 				B31486231C5CA7F200D43094 /* Info.plist */,
-				B31486131C5CA7F200D43094 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -149,6 +141,198 @@
 				B31486391C5CA7F200D43094 /* Info.plist */,
 			);
 			path = weiboUITests;
+			sourceTree = "<group>";
+		};
+		B3C812FF1C5E041F002A37C5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B3C813001C5E041F002A37C5 /* Discover */,
+				B3C813041C5E041F002A37C5 /* Home */,
+				B3C813081C5E041F002A37C5 /* Main */,
+				B3C813101C5E041F002A37C5 /* Message */,
+				B3C813141C5E041F002A37C5 /* Other */,
+				B3C8131B1C5E041F002A37C5 /* Profile */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B3C813001C5E041F002A37C5 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				B3C813011C5E041F002A37C5 /* Controller */,
+				B3C813021C5E041F002A37C5 /* Model */,
+				B3C813031C5E041F002A37C5 /* View */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		B3C813011C5E041F002A37C5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B3C813021C5E041F002A37C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3C813031C5E041F002A37C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3C813041C5E041F002A37C5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B3C813051C5E041F002A37C5 /* Controller */,
+				B3C813061C5E041F002A37C5 /* Model */,
+				B3C813071C5E041F002A37C5 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B3C813051C5E041F002A37C5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B3C813061C5E041F002A37C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3C813071C5E041F002A37C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3C813081C5E041F002A37C5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B3C813091C5E041F002A37C5 /* Controller */,
+				B3C8130C1C5E041F002A37C5 /* Model */,
+				B3C8130D1C5E041F002A37C5 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B3C813091C5E041F002A37C5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B3C8130A1C5E041F002A37C5 /* TTTabBarController.h */,
+				B3C8130B1C5E041F002A37C5 /* TTTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B3C8130C1C5E041F002A37C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3C8130D1C5E041F002A37C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3C8130E1C5E041F002A37C5 /* TTTabBar.h */,
+				B3C8130F1C5E041F002A37C5 /* TTTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3C813101C5E041F002A37C5 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				B3C813111C5E041F002A37C5 /* Controller */,
+				B3C813121C5E041F002A37C5 /* Model */,
+				B3C813131C5E041F002A37C5 /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		B3C813111C5E041F002A37C5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B3C813121C5E041F002A37C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3C813131C5E041F002A37C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3C813141C5E041F002A37C5 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B3C813151C5E041F002A37C5 /* AppDelegate.h */,
+				B3C813161C5E041F002A37C5 /* AppDelegate.m */,
+				B3C813171C5E041F002A37C5 /* Category */,
+				B3C8131A1C5E041F002A37C5 /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		B3C813171C5E041F002A37C5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B3C813181C5E041F002A37C5 /* UIImage+Image.h */,
+				B3C813191C5E041F002A37C5 /* UIImage+Image.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B3C8131B1C5E041F002A37C5 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B3C8131C1C5E041F002A37C5 /* Controller */,
+				B3C8131D1C5E041F002A37C5 /* Model */,
+				B3C8131E1C5E041F002A37C5 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		B3C8131C1C5E041F002A37C5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B3C8131D1C5E041F002A37C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3C8131E1C5E041F002A37C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,11 +465,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B31486471C5CAF8300D43094 /* TTTabBarController.m in Sources */,
-				B3C812F91C5D98E0002A37C5 /* UIImage+Image.m in Sources */,
-				B3C812FE1C5DDA95002A37C5 /* TTTabBar.m in Sources */,
-				B31486171C5CA7F200D43094 /* AppDelegate.m in Sources */,
-				B31486141C5CA7F200D43094 /* main.m in Sources */,
+				B3C813231C5E041F002A37C5 /* main.m in Sources */,
+				B3C8131F1C5E041F002A37C5 /* TTTabBarController.m in Sources */,
+				B3C813221C5E041F002A37C5 /* UIImage+Image.m in Sources */,
+				B3C813201C5E041F002A37C5 /* TTTabBar.m in Sources */,
+				B3C813211C5E041F002A37C5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
