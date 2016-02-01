@@ -22,4 +22,13 @@
  */
 + (instancetype)imageWithOriginalName:(NSString *)imageName;
 
+/**
+ *  拉伸图片
+ *
+ *  @param imageName <#imageName description#>
+ *
+ *  @return <#return value description#>
+ */
++ (instancetype)imageWithStretchableName:(NSString *)imageName;
+
 @end

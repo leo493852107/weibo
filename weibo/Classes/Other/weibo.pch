@@ -1,0 +1,29 @@
+
+//
+//  weibo.pch
+//  weibo
+//
+//  Created by leo on 16/1/31.
+//  Copyright © 2016年 leo. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#import "UIView+Frame.h"
+#import "UIImage+Image.h"
+
+#define TTKeyWindow [UIApplication sharedApplication].keyWindow
+
+// ...表示宏定义的可变参数
+// __VA_ARGS__:表示函数里面的可变参数
+#ifdef DEBUG // 调试
+
+#define TTLog(...) NSLog(__VA_ARGS__)
+
+#else // 发布
+
+#define TTLog(...)
+
+#endif
+
+#endif
