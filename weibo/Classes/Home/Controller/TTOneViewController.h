@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TTOneViewController : UITableViewController
+@interface TTOneViewController : UIViewController
 
 @end

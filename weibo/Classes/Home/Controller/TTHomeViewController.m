@@ -100,7 +100,18 @@
 }
 
 - (void)pop {
-    [_titleButton setImage:nil forState:UIControlStateNormal];
+    // 创建OneViewController
+    // 1.首先去寻找有没有TTOneView.xib
+    // 2.没有再去寻找TTOneViewController.xib
+    // 3.默认创建几乎透明的view
+    TTOneViewController *one = [[TTOneViewController alloc] init];
+    
+    // 当push的时候就会隐藏底部条
+    // 前提条件:只会隐藏系统自带的tabBar
+    one.hidesBottomBarWhenPushed = YES;
+    
+    // 跳转到另外一个控制器
+    [self.navigationController pushViewController:one animated:YES];
 }
 
 @end

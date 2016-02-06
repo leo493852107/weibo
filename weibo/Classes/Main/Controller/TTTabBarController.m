@@ -49,7 +49,7 @@
 #pragma mark - 设置tabBar
 - (void)setUpTabBar {
     // 自定义tabBar
-    TTTabBar *tabBar = [[TTTabBar alloc] initWithFrame:self.tabBar.frame];
+    TTTabBar *tabBar = [[TTTabBar alloc] initWithFrame:self.tabBar.bounds];
     tabBar.backgroundColor = [UIColor whiteColor];
     
     // 设置代理
@@ -59,10 +59,8 @@
     tabBar.items = self.items;
     
     // 添加自定义tabBar
-    [self.view addSubview:tabBar];
+    [self.tabBar addSubview:tabBar];
     
-    // 移除系统的tabBar
-    [self.tabBar removeFromSuperview];
 }
 
 #pragma mark - 当点击tabBar上的按钮调用
@@ -72,6 +70,14 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
+    // 移除系统的tabBarButton
+    for (UIView *tabBarButton in self.tabBar.subviews) {
+        if ([tabBarButton isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
+            [tabBarButton removeFromSuperview];
+        }
+    }
+
 }
 
 
@@ -86,8 +92,6 @@
     TTMessageViewController *message = [[TTMessageViewController alloc] init];
     [self setUpOneChildViewController:message image:[UIImage imageNamed:@"tabbar_message_center"] selectedImage:[UIImage imageWithOriginalName:@"tabbar_message_center_selected"] title:@"消息"];
 
-
-    
     // 发现
     TTDiscoverViewController *discover = [[TTDiscoverViewController alloc] init];
     [self setUpOneChildViewController:discover image:[UIImage imageNamed:@"tabbar_discover"] selectedImage:[UIImage imageWithOriginalName:@"tabbar_discover_selected"] title:@"发现"];
@@ -118,6 +122,7 @@
     // 保存tabBarItem模型到数组
     [self.items addObject:vc.tabBarItem];
     
+    // initWithRootViewController底层就会调用导航控制器的push方法，把根控制器压入栈
     TTNavigationController *nav = [[TTNavigationController alloc] initWithRootViewController:vc];
 
     [self addChildViewController:nav];

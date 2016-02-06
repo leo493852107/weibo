@@ -38,7 +38,7 @@
     }
     
     CGSize size = [badgeValue sizeWithFont:TTBadgeViewFont];
-    TTLog(@"%f----%f", size.width, self.width);
+//    TTLog(@"%f----%f", size.width, self.width);
     // 文字的尺寸大于控件的宽度
     if (size.width > self.width) {
         [self setImage:[UIImage imageNamed:@"new_dot"] forState:UIControlStateNormal];
