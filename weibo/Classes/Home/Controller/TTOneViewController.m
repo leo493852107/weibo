@@ -13,7 +13,7 @@
 
 // init底层会调用initWithNibName
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    TTLog(@"%s", __func__);
+//    TTLog(@"%s", __func__);
     return [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
 }
 - (IBAction)JumpToTwo:(id)sender {

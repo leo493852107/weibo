@@ -19,7 +19,7 @@
 }
 
 - (void)chat {
-    TTLog(@"%s", __func__);
+
 }
 
 @end

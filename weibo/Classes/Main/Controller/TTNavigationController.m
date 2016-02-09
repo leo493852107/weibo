@@ -54,7 +54,7 @@
 
 // 导航控制器跳转完成的时候调用
 - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    TTLog(@"%@", self.viewControllers[0]);
+//    TTLog(@"%@", self.viewControllers[0]);
     
     if (viewController == self.viewControllers[0]) {
         // 还原滑动手势的代理
@@ -83,7 +83,7 @@
         viewController.navigationItem.rightBarButtonItem = [UIBarButtonItem barButtonItemWidthImage:[UIImage imageNamed:@"navigationbar_more"] highImage:[UIImage imageNamed:@"navigationbar_more_highlighted"] target:self action:@selector(backToRoot) forControlEvents:UIControlEventTouchUpInside];
         
     }
-    TTLog(@"%s", __func__);
+
     
     [super pushViewController:viewController animated:animated];
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87F4B6B56170C7D70CD1839E /* libPods-weibo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF37F41ED74AFD42309290D /* libPods-weibo.a */; };
 		B314861F1C5CA7F200D43094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B314861E1C5CA7F200D43094 /* Assets.xcassets */; };
 		B31486221C5CA7F200D43094 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31486201C5CA7F200D43094 /* LaunchScreen.storyboard */; };
 		B314862D1C5CA7F200D43094 /* weiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B314862C1C5CA7F200D43094 /* weiboTests.m */; };
@@ -16,6 +17,31 @@
 		B327C7511C63381000C89B9E /* TTTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B327C74F1C63381000C89B9E /* TTTwoViewController.xib */; };
 		B3766E821C65A1CB006790BC /* TTNewFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766E811C65A1CB006790BC /* TTNewFeatureController.m */; };
 		B3766E851C65C3C8006790BC /* TTNewFeatureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766E841C65C3C8006790BC /* TTNewFeatureCell.m */; };
+		B3766E8C1C66E509006790BC /* TTOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766E8B1C66E509006790BC /* TTOAuthViewController.m */; };
+		B3766E981C695A32006790BC /* TTAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766E971C695A32006790BC /* TTAccount.m */; };
+		B3766E9D1C696035006790BC /* TTAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766E9C1C696035006790BC /* TTAccountTool.m */; };
+		B3766ED41C698F02006790BC /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766ED01C698F02006790BC /* MBProgressHUD+MJ.m */; };
+		B3766ED51C698F02006790BC /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B3766ED11C698F02006790BC /* MBProgressHUD.bundle */; };
+		B3766ED61C698F02006790BC /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766ED31C698F02006790BC /* MBProgressHUD.m */; };
+		B3766EDA1C69A8F2006790BC /* TTRootTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766ED91C69A8F2006790BC /* TTRootTool.m */; };
+		B3766EDD1C69D358006790BC /* TTStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766EDC1C69D358006790BC /* TTStatus.m */; };
+		B3766EE01C69D64C006790BC /* TTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766EDF1C69D64C006790BC /* TTUser.m */; };
+		B3766EE31C69D70D006790BC /* TTPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766EE21C69D70D006790BC /* TTPhoto.m */; };
+		B3766EF51C69EE42006790BC /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B3766EE51C69EE42006790BC /* MJRefresh.bundle */; };
+		B3766EF61C69EE42006790BC /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766EE81C69EE42006790BC /* MJRefreshBaseView.m */; };
+		B3766EF71C69EE42006790BC /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766EEA1C69EE42006790BC /* MJRefreshConst.m */; };
+		B3766EF81C69EE42006790BC /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766EEC1C69EE42006790BC /* MJRefreshFooterView.m */; };
+		B3766EF91C69EE42006790BC /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766EEE1C69EE42006790BC /* MJRefreshHeaderView.m */; };
+		B3766EFA1C69EE42006790BC /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766EF01C69EE42006790BC /* UIScrollView+MJExtension.m */; };
+		B3766EFB1C69EE42006790BC /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766EF21C69EE42006790BC /* UIScrollView+MJRefresh.m */; };
+		B3766EFC1C69EE42006790BC /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766EF41C69EE42006790BC /* UIView+MJExtension.m */; };
+		B3766F0D1C69FF12006790BC /* MJConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766EFF1C69FF12006790BC /* MJConst.m */; };
+		B3766F0E1C69FF12006790BC /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766F021C69FF12006790BC /* MJFoundation.m */; };
+		B3766F0F1C69FF12006790BC /* MJIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766F041C69FF12006790BC /* MJIvar.m */; };
+		B3766F101C69FF12006790BC /* MJType.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766F061C69FF12006790BC /* MJType.m */; };
+		B3766F111C69FF12006790BC /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766F081C69FF12006790BC /* NSObject+MJCoding.m */; };
+		B3766F121C69FF12006790BC /* NSObject+MJIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766F0A1C69FF12006790BC /* NSObject+MJIvar.m */; };
+		B3766F131C69FF12006790BC /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766F0C1C69FF12006790BC /* NSObject+MJKeyValue.m */; };
 		B3C812FB1C5DB946002A37C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C812FA1C5DB946002A37C5 /* UIKit.framework */; };
 		B3C8131F1C5E041F002A37C5 /* TTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C8130B1C5E041F002A37C5 /* TTTabBarController.m */; };
 		B3C813201C5E041F002A37C5 /* TTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C8130F1C5E041F002A37C5 /* TTTabBar.m */; };
@@ -56,6 +82,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6DF37F41ED74AFD42309290D /* libPods-weibo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-weibo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F45FA89B5DE4974F9148990 /* Pods-weibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weibo/Pods-weibo.debug.xcconfig"; sourceTree = "<group>"; };
+		A5F4AC93093C7A70AADB6CFA /* Pods-weibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-weibo/Pods-weibo.release.xcconfig"; sourceTree = "<group>"; };
 		B314860F1C5CA7F200D43094 /* weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B314861E1C5CA7F200D43094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B31486211C5CA7F200D43094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +103,56 @@
 		B3766E811C65A1CB006790BC /* TTNewFeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTNewFeatureController.m; sourceTree = "<group>"; };
 		B3766E831C65C3C8006790BC /* TTNewFeatureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNewFeatureCell.h; sourceTree = "<group>"; };
 		B3766E841C65C3C8006790BC /* TTNewFeatureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTNewFeatureCell.m; sourceTree = "<group>"; };
+		B3766E8A1C66E509006790BC /* TTOAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTOAuthViewController.h; sourceTree = "<group>"; };
+		B3766E8B1C66E509006790BC /* TTOAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTOAuthViewController.m; sourceTree = "<group>"; };
+		B3766E961C695A32006790BC /* TTAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAccount.h; sourceTree = "<group>"; };
+		B3766E971C695A32006790BC /* TTAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAccount.m; sourceTree = "<group>"; };
+		B3766E9B1C696035006790BC /* TTAccountTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAccountTool.h; sourceTree = "<group>"; };
+		B3766E9C1C696035006790BC /* TTAccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAccountTool.m; sourceTree = "<group>"; };
+		B3766ECF1C698F02006790BC /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		B3766ED01C698F02006790BC /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		B3766ED11C698F02006790BC /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		B3766ED21C698F02006790BC /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		B3766ED31C698F02006790BC /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		B3766ED81C69A8F2006790BC /* TTRootTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRootTool.h; sourceTree = "<group>"; };
+		B3766ED91C69A8F2006790BC /* TTRootTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRootTool.m; sourceTree = "<group>"; };
+		B3766EDB1C69D358006790BC /* TTStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStatus.h; sourceTree = "<group>"; };
+		B3766EDC1C69D358006790BC /* TTStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStatus.m; sourceTree = "<group>"; };
+		B3766EDE1C69D64C006790BC /* TTUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTUser.h; sourceTree = "<group>"; };
+		B3766EDF1C69D64C006790BC /* TTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTUser.m; sourceTree = "<group>"; };
+		B3766EE11C69D70D006790BC /* TTPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPhoto.h; sourceTree = "<group>"; };
+		B3766EE21C69D70D006790BC /* TTPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTPhoto.m; sourceTree = "<group>"; };
+		B3766EE51C69EE42006790BC /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
+		B3766EE61C69EE42006790BC /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
+		B3766EE71C69EE42006790BC /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
+		B3766EE81C69EE42006790BC /* MJRefreshBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBaseView.m; sourceTree = "<group>"; };
+		B3766EE91C69EE42006790BC /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConst.h; sourceTree = "<group>"; };
+		B3766EEA1C69EE42006790BC /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
+		B3766EEB1C69EE42006790BC /* MJRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooterView.h; sourceTree = "<group>"; };
+		B3766EEC1C69EE42006790BC /* MJRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooterView.m; sourceTree = "<group>"; };
+		B3766EED1C69EE42006790BC /* MJRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeaderView.h; sourceTree = "<group>"; };
+		B3766EEE1C69EE42006790BC /* MJRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeaderView.m; sourceTree = "<group>"; };
+		B3766EEF1C69EE42006790BC /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
+		B3766EF01C69EE42006790BC /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
+		B3766EF11C69EE42006790BC /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
+		B3766EF21C69EE42006790BC /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
+		B3766EF31C69EE42006790BC /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
+		B3766EF41C69EE42006790BC /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		B3766EFE1C69FF12006790BC /* MJConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJConst.h; sourceTree = "<group>"; };
+		B3766EFF1C69FF12006790BC /* MJConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJConst.m; sourceTree = "<group>"; };
+		B3766F001C69FF12006790BC /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		B3766F011C69FF12006790BC /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		B3766F021C69FF12006790BC /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		B3766F031C69FF12006790BC /* MJIvar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJIvar.h; sourceTree = "<group>"; };
+		B3766F041C69FF12006790BC /* MJIvar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJIvar.m; sourceTree = "<group>"; };
+		B3766F051C69FF12006790BC /* MJType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJType.h; sourceTree = "<group>"; };
+		B3766F061C69FF12006790BC /* MJType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJType.m; sourceTree = "<group>"; };
+		B3766F071C69FF12006790BC /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		B3766F081C69FF12006790BC /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		B3766F091C69FF12006790BC /* NSObject+MJIvar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJIvar.h"; sourceTree = "<group>"; };
+		B3766F0A1C69FF12006790BC /* NSObject+MJIvar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJIvar.m"; sourceTree = "<group>"; };
+		B3766F0B1C69FF12006790BC /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		B3766F0C1C69FF12006790BC /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
 		B3C812FA1C5DB946002A37C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B3C8130A1C5E041F002A37C5 /* TTTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabBarController.h; sourceTree = "<group>"; };
 		B3C8130B1C5E041F002A37C5 /* TTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTabBarController.m; sourceTree = "<group>"; };
@@ -121,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3C812FB1C5DB946002A37C5 /* UIKit.framework in Frameworks */,
+				87F4B6B56170C7D70CD1839E /* libPods-weibo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +221,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BEB660DF2CABE2C542CC321 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F45FA89B5DE4974F9148990 /* Pods-weibo.debug.xcconfig */,
+				A5F4AC93093C7A70AADB6CFA /* Pods-weibo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9F00053DB5DA1AB77A6C5BED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DF37F41ED74AFD42309290D /* libPods-weibo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B31486061C5CA7F200D43094 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +246,8 @@
 				B314862B1C5CA7F200D43094 /* weiboTests */,
 				B31486361C5CA7F200D43094 /* weiboUITests */,
 				B31486101C5CA7F200D43094 /* Products */,
+				0BEB660DF2CABE2C542CC321 /* Pods */,
+				9F00053DB5DA1AB77A6C5BED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -234,9 +333,141 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B3766E861C66E4CD006790BC /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				B3766E871C66E4CD006790BC /* Controller */,
+				B3766E881C66E4CD006790BC /* Model */,
+				B3766E891C66E4CD006790BC /* View */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		B3766E871C66E4CD006790BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B3766E8A1C66E509006790BC /* TTOAuthViewController.h */,
+				B3766E8B1C66E509006790BC /* TTOAuthViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B3766E881C66E4CD006790BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3766E961C695A32006790BC /* TTAccount.h */,
+				B3766E971C695A32006790BC /* TTAccount.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3766E891C66E4CD006790BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3766E8D1C67227E006790BC /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				B3766EFD1C69FF12006790BC /* MJExtension */,
+				B3766EE41C69EE42006790BC /* MJRefresh */,
+				B3766ECE1C698F02006790BC /* MBProgressHUD */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		B3766E991C696019006790BC /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				B3766ED71C69A8E2006790BC /* Root */,
+				B3766E9A1C696019006790BC /* Account */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		B3766E9A1C696019006790BC /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				B3766E9B1C696035006790BC /* TTAccountTool.h */,
+				B3766E9C1C696035006790BC /* TTAccountTool.m */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		B3766ECE1C698F02006790BC /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B3766ECF1C698F02006790BC /* MBProgressHUD+MJ.h */,
+				B3766ED01C698F02006790BC /* MBProgressHUD+MJ.m */,
+				B3766ED11C698F02006790BC /* MBProgressHUD.bundle */,
+				B3766ED21C698F02006790BC /* MBProgressHUD.h */,
+				B3766ED31C698F02006790BC /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			path = ../MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		B3766ED71C69A8E2006790BC /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				B3766ED81C69A8F2006790BC /* TTRootTool.h */,
+				B3766ED91C69A8F2006790BC /* TTRootTool.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		B3766EE41C69EE42006790BC /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				B3766EE51C69EE42006790BC /* MJRefresh.bundle */,
+				B3766EE61C69EE42006790BC /* MJRefresh.h */,
+				B3766EE71C69EE42006790BC /* MJRefreshBaseView.h */,
+				B3766EE81C69EE42006790BC /* MJRefreshBaseView.m */,
+				B3766EE91C69EE42006790BC /* MJRefreshConst.h */,
+				B3766EEA1C69EE42006790BC /* MJRefreshConst.m */,
+				B3766EEB1C69EE42006790BC /* MJRefreshFooterView.h */,
+				B3766EEC1C69EE42006790BC /* MJRefreshFooterView.m */,
+				B3766EED1C69EE42006790BC /* MJRefreshHeaderView.h */,
+				B3766EEE1C69EE42006790BC /* MJRefreshHeaderView.m */,
+				B3766EEF1C69EE42006790BC /* UIScrollView+MJExtension.h */,
+				B3766EF01C69EE42006790BC /* UIScrollView+MJExtension.m */,
+				B3766EF11C69EE42006790BC /* UIScrollView+MJRefresh.h */,
+				B3766EF21C69EE42006790BC /* UIScrollView+MJRefresh.m */,
+				B3766EF31C69EE42006790BC /* UIView+MJExtension.h */,
+				B3766EF41C69EE42006790BC /* UIView+MJExtension.m */,
+			);
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		B3766EFD1C69FF12006790BC /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B3766EFE1C69FF12006790BC /* MJConst.h */,
+				B3766EFF1C69FF12006790BC /* MJConst.m */,
+				B3766F001C69FF12006790BC /* MJExtension.h */,
+				B3766F011C69FF12006790BC /* MJFoundation.h */,
+				B3766F021C69FF12006790BC /* MJFoundation.m */,
+				B3766F031C69FF12006790BC /* MJIvar.h */,
+				B3766F041C69FF12006790BC /* MJIvar.m */,
+				B3766F051C69FF12006790BC /* MJType.h */,
+				B3766F061C69FF12006790BC /* MJType.m */,
+				B3766F071C69FF12006790BC /* NSObject+MJCoding.h */,
+				B3766F081C69FF12006790BC /* NSObject+MJCoding.m */,
+				B3766F091C69FF12006790BC /* NSObject+MJIvar.h */,
+				B3766F0A1C69FF12006790BC /* NSObject+MJIvar.m */,
+				B3766F0B1C69FF12006790BC /* NSObject+MJKeyValue.h */,
+				B3766F0C1C69FF12006790BC /* NSObject+MJKeyValue.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
 		B3C812FF1C5E041F002A37C5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B3766E991C696019006790BC /* Tool */,
+				B3766E861C66E4CD006790BC /* OAuth */,
 				B3766E7C1C65A191006790BC /* NewFeature */,
 				B3C813001C5E041F002A37C5 /* Discover */,
 				B3C813041C5E041F002A37C5 /* Home */,
@@ -311,6 +542,12 @@
 		B3C813061C5E041F002A37C5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B3766EDB1C69D358006790BC /* TTStatus.h */,
+				B3766EDC1C69D358006790BC /* TTStatus.m */,
+				B3766EDE1C69D64C006790BC /* TTUser.h */,
+				B3766EDF1C69D64C006790BC /* TTUser.m */,
+				B3766EE11C69D70D006790BC /* TTPhoto.h */,
+				B3766EE21C69D70D006790BC /* TTPhoto.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -405,6 +642,7 @@
 		B3C813141C5E041F002A37C5 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				B3766E8D1C67227E006790BC /* Lib */,
 				B3C813151C5E041F002A37C5 /* AppDelegate.h */,
 				B3C813161C5E041F002A37C5 /* AppDelegate.m */,
 				B3C813171C5E041F002A37C5 /* Category */,
@@ -467,9 +705,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B314863C1C5CA7F200D43094 /* Build configuration list for PBXNativeTarget "weibo" */;
 			buildPhases = (
+				67E1D96F2177D724F12C7126 /* Check Pods Manifest.lock */,
 				B314860B1C5CA7F200D43094 /* Sources */,
 				B314860C1C5CA7F200D43094 /* Frameworks */,
 				B314860D1C5CA7F200D43094 /* Resources */,
+				C823DAEFD9BE72C923276C4D /* Embed Pods Frameworks */,
+				E9A48B760CDDC022DF5BFBA5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -566,6 +807,8 @@
 			files = (
 				B31486221C5CA7F200D43094 /* LaunchScreen.storyboard in Resources */,
 				B327C7511C63381000C89B9E /* TTTwoViewController.xib in Resources */,
+				B3766EF51C69EE42006790BC /* MJRefresh.bundle in Resources */,
+				B3766ED51C698F02006790BC /* MBProgressHUD.bundle in Resources */,
 				B327C6951C603FAA00C89B9E /* TTOneViewController.xib in Resources */,
 				B314861F1C5CA7F200D43094 /* Assets.xcassets in Resources */,
 			);
@@ -587,26 +830,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		67E1D96F2177D724F12C7126 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C823DAEFD9BE72C923276C4D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weibo/Pods-weibo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9A48B760CDDC022DF5BFBA5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weibo/Pods-weibo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B314860B1C5CA7F200D43094 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3766EFA1C69EE42006790BC /* UIScrollView+MJExtension.m in Sources */,
 				B3C813451C5F2482002A37C5 /* TTMessageViewController.m in Sources */,
 				B327C7501C63381000C89B9E /* TTTwoViewController.m in Sources */,
 				B3C813231C5E041F002A37C5 /* main.m in Sources */,
+				B3766F101C69FF12006790BC /* MJType.m in Sources */,
+				B3766E981C695A32006790BC /* TTAccount.m in Sources */,
+				B3766EE01C69D64C006790BC /* TTUser.m in Sources */,
+				B3766EE31C69D70D006790BC /* TTPhoto.m in Sources */,
 				B3C813301C5EF390002A37C5 /* UIBarButtonItem+Item.m in Sources */,
 				B3C8134B1C5F2804002A37C5 /* TTTabBarButton.m in Sources */,
+				B3766EF81C69EE42006790BC /* MJRefreshFooterView.m in Sources */,
+				B3766EF71C69EE42006790BC /* MJRefreshConst.m in Sources */,
 				B3766E851C65C3C8006790BC /* TTNewFeatureCell.m in Sources */,
+				B3766F131C69FF12006790BC /* NSObject+MJKeyValue.m in Sources */,
 				B3C813391C5F014F002A37C5 /* TTPopMenu.m in Sources */,
+				B3766EF61C69EE42006790BC /* MJRefreshBaseView.m in Sources */,
+				B3766EDD1C69D358006790BC /* TTStatus.m in Sources */,
+				B3766EFC1C69EE42006790BC /* UIView+MJExtension.m in Sources */,
 				B3C8134E1C5F2859002A37C5 /* TTBadgeView.m in Sources */,
+				B3766E8C1C66E509006790BC /* TTOAuthViewController.m in Sources */,
+				B3766EF91C69EE42006790BC /* MJRefreshHeaderView.m in Sources */,
+				B3766EFB1C69EE42006790BC /* UIScrollView+MJRefresh.m in Sources */,
+				B3766F0F1C69FF12006790BC /* MJIvar.m in Sources */,
 				B3C813361C5EFC68002A37C5 /* TTTitleButton.m in Sources */,
+				B3766E9D1C696035006790BC /* TTAccountTool.m in Sources */,
 				B3C813421C5F228C002A37C5 /* TTOneViewController.m in Sources */,
+				B3766F0E1C69FF12006790BC /* MJFoundation.m in Sources */,
+				B3766ED61C698F02006790BC /* MBProgressHUD.m in Sources */,
 				B3C813261C5E0F9D002A37C5 /* TTDiscoverViewController.m in Sources */,
+				B3766F0D1C69FF12006790BC /* MJConst.m in Sources */,
 				B3C813331C5EF974002A37C5 /* TTNavigationController.m in Sources */,
+				B3766F111C69FF12006790BC /* NSObject+MJCoding.m in Sources */,
 				B3C8131F1C5E041F002A37C5 /* TTTabBarController.m in Sources */,
+				B3766F121C69FF12006790BC /* NSObject+MJIvar.m in Sources */,
+				B3766EDA1C69A8F2006790BC /* TTRootTool.m in Sources */,
 				B3C8133C1C5F0498002A37C5 /* TTCover.m in Sources */,
 				B3C8132D1C5E11FD002A37C5 /* TTSearchBar.m in Sources */,
+				B3766ED41C698F02006790BC /* MBProgressHUD+MJ.m in Sources */,
 				B3C8133F1C5F07A6002A37C5 /* TTHomeViewController.m in Sources */,
 				B3C8132A1C5E1129002A37C5 /* UIView+Frame.m in Sources */,
 				B3C813221C5E041F002A37C5 /* UIImage+Image.m in Sources */,
@@ -742,6 +1056,7 @@
 		};
 		B314863D1C5CA7F200D43094 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F45FA89B5DE4974F9148990 /* Pods-weibo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = weibo/Classes/Other/weibo.pch;
@@ -755,6 +1070,7 @@
 		};
 		B314863E1C5CA7F200D43094 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5F4AC93093C7A70AADB6CFA /* Pods-weibo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = weibo/Classes/Other/weibo.pch;
