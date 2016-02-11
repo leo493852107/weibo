@@ -27,6 +27,8 @@
 #import "MJRefresh.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
+#import "TTHttpTool.h"
+#import "TTStatusTool.h"
 
 @interface TTHomeViewController ()<TTCoverDelegate>
 
@@ -79,75 +81,64 @@
     
 }
 
+#pragma mark - 刷新最新的微博
+- (void)refresh {
+    
+    // 自动下拉刷新
+    [self.tableView headerBeginRefreshing];
+    
+}
+
+
 #pragma mark - 请求更多数据
 - (void)loadMoreStatus {
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    // 创建一个参数字典
-    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    
+    NSString *maxIdStr = nil;
     if (self.statuses.count) {
         // 有微博数据，才需要下拉刷新
-        long long max_id = [[[self.statuses lastObject] idstr] longLongValue] - 1;
-        params[@"max_id"] = [NSString stringWithFormat:@"%lld", max_id];
+        long long maxId = [[[self.statuses lastObject] idstr] longLongValue] - 1;
+        maxIdStr = [NSString stringWithFormat:@"%lld", maxId];
         
     }
-    params[@"access_token"] = [TTAccountTool account].access_token;
     
-    // 发送GET请求
-    [manager GET:@"https://api.weibo.com/2/statuses/friends_timeline.json" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
+    [TTStatusTool MoreStatusWithMaxId:maxIdStr success:^(NSArray *statuses) {
         // 结束上拉刷新
         [self.tableView footerEndRefreshing];
         
-        // 获取到微博数据
-        // 获取字典数组
-        NSArray *dictArr = responseObject[@"statuses"];
-        // 把字典数组转换成模型数组
-        NSArray *statues = [TTStatus objectArrayWithKeyValuesArray:dictArr];
-        
         // 把数组中的元素添加进去，注： 不是 addObject 把数组添加进去
-        [self.statuses addObjectsFromArray:statues];
+        [self.statuses addObjectsFromArray:statuses];
         
         // 刷新表格
         [self.tableView reloadData];
         
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSError *error) {
         
     }];
+        
 }
 
 #pragma mark - 请求最新的微博数据
 - (void)loadNewStatus {
-
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    // 创建一个参数字典
-    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    NSString *sinceId = nil;
     if (self.statuses.count) {
         // 有微博数据，才需要下拉刷新
-        params[@"since_id"] = [self.statuses[0] idstr];
-
+        sinceId = [self.statuses[0] idstr];
     }
-    params[@"access_token"] = [TTAccountTool account].access_token;
-    
-    // 发送GET请求
-    [manager GET:@"https://api.weibo.com/2/statuses/friends_timeline.json" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [TTStatusTool newStatusWithSinceId:sinceId success:^(NSArray *statuses) {
+        // 请求成功的block
         
         // 结束下拉刷新
         [self.tableView headerEndRefreshing];
         
-        // 获取到微博数据
-        // 获取字典数组
-        NSArray *dictArr = responseObject[@"statuses"];
-        // 把字典数组转换成模型数组
-        NSArray *statues = [TTStatus objectArrayWithKeyValuesArray:dictArr];
-        
-        NSIndexSet *indexSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, statues.count)];
+        NSIndexSet *indexSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, statuses.count)];
         // 把最新的微博数插入到最前面
-        [self.statuses insertObjects:statues atIndexes:indexSet];
-
+        [self.statuses insertObjects:statuses atIndexes:indexSet];
+        
         // 刷新表格
         [self.tableView reloadData];
         
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    } failure:^(NSError *error) {
         
     }];
     

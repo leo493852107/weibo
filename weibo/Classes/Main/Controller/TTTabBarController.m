@@ -17,11 +17,18 @@
 
 #import "TTNavigationController.h"
 
+#import "TTUserTool.h"
+#import "TTUserResult.h"
+
 @interface TTTabBarController () <TTTabBarDelegate>
 
 @property (nonatomic, strong) NSMutableArray *items;
 
 @property (nonatomic, weak) TTHomeViewController *home;
+
+@property (nonatomic, weak) TTMessageViewController *message;
+
+@property (nonatomic, weak) TTProfileViewController *profile;
 
 @end
 
@@ -44,6 +51,32 @@
     // 自定义tabBar
     [self setUpTabBar];
     
+    // 每隔一段时间(2s)请求未读数
+    [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(requestUnread) userInfo:nil repeats:YES];
+    
+}
+
+- (void)requestUnread {
+    
+    // 请求微博的未读数
+    [TTUserTool unreadWithSuccess:^(TTUserResult *result) {
+        
+        // 设置首页未读数
+        _home.tabBarItem.badgeValue = [NSString stringWithFormat:@"%d", result.status];
+        
+        // 设置消息未读数
+        _message.tabBarItem.badgeValue = [NSString stringWithFormat:@"%d", result.messageCount];
+        
+        // 设置我的未读数
+        _profile.tabBarItem.badgeValue = [NSString stringWithFormat:@"%d", result.follower];
+        
+        // 设置应用程序所有的未读数
+        [UIApplication sharedApplication].applicationIconBadgeNumber = result.totalCount;
+        
+    } failure:^(NSError *error) {
+        
+    }];
+
 }
 
 #pragma mark - 设置tabBar
@@ -65,6 +98,11 @@
 
 #pragma mark - 当点击tabBar上的按钮调用
 - (void)tabBar:(TTTabBar *)tabBar didClickButton:(NSInteger)index {
+    
+    // 点击首页，刷新(注： 从 首页->消息->首页 首页不刷新 self.selectedIndex)
+    if (index == 0 && self.selectedIndex == index) {
+        [_home refresh];
+    }
     self.selectedIndex = index;
 }
 
@@ -91,6 +129,7 @@
     // 消息
     TTMessageViewController *message = [[TTMessageViewController alloc] init];
     [self setUpOneChildViewController:message image:[UIImage imageNamed:@"tabbar_message_center"] selectedImage:[UIImage imageWithOriginalName:@"tabbar_message_center_selected"] title:@"消息"];
+    _message = message;
 
     // 发现
     TTDiscoverViewController *discover = [[TTDiscoverViewController alloc] init];
@@ -99,6 +138,7 @@
     // 我
     TTProfileViewController *profile = [[TTProfileViewController alloc] init];
     [self setUpOneChildViewController:profile image:[UIImage imageNamed:@"tabbar_profile"] selectedImage:[UIImage imageWithOriginalName:@"tabbar_profile_selected"] title:@"我"];
+    _profile = profile;
 
 }
 

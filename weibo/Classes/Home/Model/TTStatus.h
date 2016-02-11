@@ -46,17 +46,17 @@
 /**
  *  转发数
  */
-@property (nonatomic, assign) int *reposts_count;
+@property (nonatomic, assign) int reposts_count;
 
 /**
  *  评论数
  */
-@property (nonatomic, assign) int *comments_count;
+@property (nonatomic, assign) int comments_count;
 
 /**
  *  表态数
  */
-@property (nonatomic, assign) int *attitudes_count;
+@property (nonatomic, assign) int attitudes_count;
 
 /**
  *  配图数组(TTPhoto)

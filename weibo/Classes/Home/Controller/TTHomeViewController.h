@@ -10,4 +10,6 @@
 
 @interface TTHomeViewController : UITableViewController
 
+- (void)refresh;
+
 @end

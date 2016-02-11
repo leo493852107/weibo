@@ -42,6 +42,18 @@
 		B3766F111C69FF12006790BC /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766F081C69FF12006790BC /* NSObject+MJCoding.m */; };
 		B3766F121C69FF12006790BC /* NSObject+MJIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766F0A1C69FF12006790BC /* NSObject+MJIvar.m */; };
 		B3766F131C69FF12006790BC /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766F0C1C69FF12006790BC /* NSObject+MJKeyValue.m */; };
+		B3BB055D1C6AE54300B605E1 /* TTHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B3BB055C1C6AE54300B605E1 /* TTHttpTool.m */; };
+		B3BB05A31C6C330200B605E1 /* TTStatusTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B3BB05A21C6C330200B605E1 /* TTStatusTool.m */; };
+		B3BB05A81C6C556000B605E1 /* TTStatusParam.m in Sources */ = {isa = PBXBuildFile; fileRef = B3BB05A71C6C556000B605E1 /* TTStatusParam.m */; };
+		B3BB05AB1C6C57BC00B605E1 /* TTStatusResult.m in Sources */ = {isa = PBXBuildFile; fileRef = B3BB05AA1C6C57BC00B605E1 /* TTStatusResult.m */; };
+		B3BB05AF1C6C624200B605E1 /* TTAccountParam.m in Sources */ = {isa = PBXBuildFile; fileRef = B3BB05AE1C6C624200B605E1 /* TTAccountParam.m */; };
+		B3BB05B51C6C67ED00B605E1 /* TTUserParam.m in Sources */ = {isa = PBXBuildFile; fileRef = B3BB05B41C6C67ED00B605E1 /* TTUserParam.m */; };
+		B3BB05B91C6C688000B605E1 /* TTBaseParam.m in Sources */ = {isa = PBXBuildFile; fileRef = B3BB05B81C6C688000B605E1 /* TTBaseParam.m */; };
+		B3BB05BC1C6C69F800B605E1 /* TTUserResult.m in Sources */ = {isa = PBXBuildFile; fileRef = B3BB05BB1C6C69F800B605E1 /* TTUserResult.m */; };
+		B3BB05BF1C6C6BC000B605E1 /* TTUserTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B3BB05BE1C6C6BC000B605E1 /* TTUserTool.m */; };
+		B3BB05C11C6C798900B605E1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3BB05C01C6C798900B605E1 /* AVFoundation.framework */; };
+		B3BB05C51C6C7A0E00B605E1 /* silence.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B3BB05C31C6C7A0E00B605E1 /* silence.mp3 */; };
+		B3BB05C61C6C7A0E00B605E1 /* 爸比我要喝奶奶.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B3BB05C41C6C7A0E00B605E1 /* 爸比我要喝奶奶.mp3 */; };
 		B3C812FB1C5DB946002A37C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C812FA1C5DB946002A37C5 /* UIKit.framework */; };
 		B3C8131F1C5E041F002A37C5 /* TTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C8130B1C5E041F002A37C5 /* TTTabBarController.m */; };
 		B3C813201C5E041F002A37C5 /* TTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C8130F1C5E041F002A37C5 /* TTTabBar.m */; };
@@ -153,6 +165,27 @@
 		B3766F0A1C69FF12006790BC /* NSObject+MJIvar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJIvar.m"; sourceTree = "<group>"; };
 		B3766F0B1C69FF12006790BC /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
 		B3766F0C1C69FF12006790BC /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		B3BB055B1C6AE54300B605E1 /* TTHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTHttpTool.h; sourceTree = "<group>"; };
+		B3BB055C1C6AE54300B605E1 /* TTHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTHttpTool.m; sourceTree = "<group>"; };
+		B3BB05A11C6C330200B605E1 /* TTStatusTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStatusTool.h; sourceTree = "<group>"; };
+		B3BB05A21C6C330200B605E1 /* TTStatusTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStatusTool.m; sourceTree = "<group>"; };
+		B3BB05A61C6C556000B605E1 /* TTStatusParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStatusParam.h; sourceTree = "<group>"; };
+		B3BB05A71C6C556000B605E1 /* TTStatusParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStatusParam.m; sourceTree = "<group>"; };
+		B3BB05A91C6C57BC00B605E1 /* TTStatusResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStatusResult.h; sourceTree = "<group>"; };
+		B3BB05AA1C6C57BC00B605E1 /* TTStatusResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStatusResult.m; sourceTree = "<group>"; };
+		B3BB05AD1C6C624200B605E1 /* TTAccountParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAccountParam.h; sourceTree = "<group>"; };
+		B3BB05AE1C6C624200B605E1 /* TTAccountParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAccountParam.m; sourceTree = "<group>"; };
+		B3BB05B31C6C67ED00B605E1 /* TTUserParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTUserParam.h; sourceTree = "<group>"; };
+		B3BB05B41C6C67ED00B605E1 /* TTUserParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTUserParam.m; sourceTree = "<group>"; };
+		B3BB05B71C6C688000B605E1 /* TTBaseParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBaseParam.h; sourceTree = "<group>"; };
+		B3BB05B81C6C688000B605E1 /* TTBaseParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBaseParam.m; sourceTree = "<group>"; };
+		B3BB05BA1C6C69F800B605E1 /* TTUserResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTUserResult.h; sourceTree = "<group>"; };
+		B3BB05BB1C6C69F800B605E1 /* TTUserResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTUserResult.m; sourceTree = "<group>"; };
+		B3BB05BD1C6C6BC000B605E1 /* TTUserTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTUserTool.h; sourceTree = "<group>"; };
+		B3BB05BE1C6C6BC000B605E1 /* TTUserTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTUserTool.m; sourceTree = "<group>"; };
+		B3BB05C01C6C798900B605E1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B3BB05C31C6C7A0E00B605E1 /* silence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = silence.mp3; sourceTree = "<group>"; };
+		B3BB05C41C6C7A0E00B605E1 /* 爸比我要喝奶奶.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "爸比我要喝奶奶.mp3"; sourceTree = "<group>"; };
 		B3C812FA1C5DB946002A37C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B3C8130A1C5E041F002A37C5 /* TTTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabBarController.h; sourceTree = "<group>"; };
 		B3C8130B1C5E041F002A37C5 /* TTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTabBarController.m; sourceTree = "<group>"; };
@@ -199,6 +232,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3BB05C11C6C798900B605E1 /* AVFoundation.framework in Frameworks */,
 				B3C812FB1C5DB946002A37C5 /* UIKit.framework in Frameworks */,
 				87F4B6B56170C7D70CD1839E /* libPods-weibo.a in Frameworks */,
 			);
@@ -233,6 +267,7 @@
 		9F00053DB5DA1AB77A6C5BED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3BB05C01C6C798900B605E1 /* AVFoundation.framework */,
 				6DF37F41ED74AFD42309290D /* libPods-weibo.a */,
 			);
 			name = Frameworks;
@@ -273,6 +308,7 @@
 		B31486121C5CA7F200D43094 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B3BB05C21C6C7A0E00B605E1 /* Mp3 */,
 				B314861E1C5CA7F200D43094 /* Assets.xcassets */,
 				B31486201C5CA7F200D43094 /* LaunchScreen.storyboard */,
 				B31486231C5CA7F200D43094 /* Info.plist */,
@@ -381,6 +417,10 @@
 		B3766E991C696019006790BC /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				B3BB05B61C6C686A00B605E1 /* Param */,
+				B3BB05B01C6C67DB00B605E1 /* User */,
+				B3BB05A01C6C32D600B605E1 /* Status */,
+				B3BB055A1C6AE52F00B605E1 /* Http */,
 				B3766ED71C69A8E2006790BC /* Root */,
 				B3766E9A1C696019006790BC /* Account */,
 			);
@@ -390,6 +430,7 @@
 		B3766E9A1C696019006790BC /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				B3BB05AC1C6C622600B605E1 /* Param */,
 				B3766E9B1C696035006790BC /* TTAccountTool.h */,
 				B3766E9C1C696035006790BC /* TTAccountTool.m */,
 			);
@@ -461,6 +502,100 @@
 				B3766F0C1C69FF12006790BC /* NSObject+MJKeyValue.m */,
 			);
 			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		B3BB055A1C6AE52F00B605E1 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				B3BB055B1C6AE54300B605E1 /* TTHttpTool.h */,
+				B3BB055C1C6AE54300B605E1 /* TTHttpTool.m */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		B3BB05A01C6C32D600B605E1 /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				B3BB05A41C6C553F00B605E1 /* Param */,
+				B3BB05A51C6C553F00B605E1 /* Result */,
+				B3BB05A11C6C330200B605E1 /* TTStatusTool.h */,
+				B3BB05A21C6C330200B605E1 /* TTStatusTool.m */,
+			);
+			path = Status;
+			sourceTree = "<group>";
+		};
+		B3BB05A41C6C553F00B605E1 /* Param */ = {
+			isa = PBXGroup;
+			children = (
+				B3BB05A61C6C556000B605E1 /* TTStatusParam.h */,
+				B3BB05A71C6C556000B605E1 /* TTStatusParam.m */,
+			);
+			path = Param;
+			sourceTree = "<group>";
+		};
+		B3BB05A51C6C553F00B605E1 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				B3BB05A91C6C57BC00B605E1 /* TTStatusResult.h */,
+				B3BB05AA1C6C57BC00B605E1 /* TTStatusResult.m */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		B3BB05AC1C6C622600B605E1 /* Param */ = {
+			isa = PBXGroup;
+			children = (
+				B3BB05AD1C6C624200B605E1 /* TTAccountParam.h */,
+				B3BB05AE1C6C624200B605E1 /* TTAccountParam.m */,
+			);
+			path = Param;
+			sourceTree = "<group>";
+		};
+		B3BB05B01C6C67DB00B605E1 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				B3BB05B11C6C67DB00B605E1 /* Param */,
+				B3BB05B21C6C67DB00B605E1 /* Result */,
+				B3BB05BD1C6C6BC000B605E1 /* TTUserTool.h */,
+				B3BB05BE1C6C6BC000B605E1 /* TTUserTool.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		B3BB05B11C6C67DB00B605E1 /* Param */ = {
+			isa = PBXGroup;
+			children = (
+				B3BB05B31C6C67ED00B605E1 /* TTUserParam.h */,
+				B3BB05B41C6C67ED00B605E1 /* TTUserParam.m */,
+			);
+			path = Param;
+			sourceTree = "<group>";
+		};
+		B3BB05B21C6C67DB00B605E1 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				B3BB05BA1C6C69F800B605E1 /* TTUserResult.h */,
+				B3BB05BB1C6C69F800B605E1 /* TTUserResult.m */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		B3BB05B61C6C686A00B605E1 /* Param */ = {
+			isa = PBXGroup;
+			children = (
+				B3BB05B71C6C688000B605E1 /* TTBaseParam.h */,
+				B3BB05B81C6C688000B605E1 /* TTBaseParam.m */,
+			);
+			path = Param;
+			sourceTree = "<group>";
+		};
+		B3BB05C21C6C7A0E00B605E1 /* Mp3 */ = {
+			isa = PBXGroup;
+			children = (
+				B3BB05C31C6C7A0E00B605E1 /* silence.mp3 */,
+				B3BB05C41C6C7A0E00B605E1 /* 爸比我要喝奶奶.mp3 */,
+			);
+			path = Mp3;
 			sourceTree = "<group>";
 		};
 		B3C812FF1C5E041F002A37C5 /* Classes */ = {
@@ -769,6 +904,11 @@
 				TargetAttributes = {
 					B314860E1C5CA7F200D43094 = {
 						CreatedOnToolsVersion = 7.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					B31486271C5CA7F200D43094 = {
 						CreatedOnToolsVersion = 7.2;
@@ -805,8 +945,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3BB05C61C6C7A0E00B605E1 /* 爸比我要喝奶奶.mp3 in Resources */,
 				B31486221C5CA7F200D43094 /* LaunchScreen.storyboard in Resources */,
 				B327C7511C63381000C89B9E /* TTTwoViewController.xib in Resources */,
+				B3BB05C51C6C7A0E00B605E1 /* silence.mp3 in Resources */,
 				B3766EF51C69EE42006790BC /* MJRefresh.bundle in Resources */,
 				B3766ED51C698F02006790BC /* MBProgressHUD.bundle in Resources */,
 				B327C6951C603FAA00C89B9E /* TTOneViewController.xib in Resources */,
@@ -888,16 +1030,20 @@
 				B327C7501C63381000C89B9E /* TTTwoViewController.m in Sources */,
 				B3C813231C5E041F002A37C5 /* main.m in Sources */,
 				B3766F101C69FF12006790BC /* MJType.m in Sources */,
+				B3BB05B51C6C67ED00B605E1 /* TTUserParam.m in Sources */,
 				B3766E981C695A32006790BC /* TTAccount.m in Sources */,
 				B3766EE01C69D64C006790BC /* TTUser.m in Sources */,
+				B3BB05BF1C6C6BC000B605E1 /* TTUserTool.m in Sources */,
 				B3766EE31C69D70D006790BC /* TTPhoto.m in Sources */,
 				B3C813301C5EF390002A37C5 /* UIBarButtonItem+Item.m in Sources */,
 				B3C8134B1C5F2804002A37C5 /* TTTabBarButton.m in Sources */,
 				B3766EF81C69EE42006790BC /* MJRefreshFooterView.m in Sources */,
 				B3766EF71C69EE42006790BC /* MJRefreshConst.m in Sources */,
+				B3BB05BC1C6C69F800B605E1 /* TTUserResult.m in Sources */,
 				B3766E851C65C3C8006790BC /* TTNewFeatureCell.m in Sources */,
 				B3766F131C69FF12006790BC /* NSObject+MJKeyValue.m in Sources */,
 				B3C813391C5F014F002A37C5 /* TTPopMenu.m in Sources */,
+				B3BB05B91C6C688000B605E1 /* TTBaseParam.m in Sources */,
 				B3766EF61C69EE42006790BC /* MJRefreshBaseView.m in Sources */,
 				B3766EDD1C69D358006790BC /* TTStatus.m in Sources */,
 				B3766EFC1C69EE42006790BC /* UIView+MJExtension.m in Sources */,
@@ -906,12 +1052,16 @@
 				B3766EF91C69EE42006790BC /* MJRefreshHeaderView.m in Sources */,
 				B3766EFB1C69EE42006790BC /* UIScrollView+MJRefresh.m in Sources */,
 				B3766F0F1C69FF12006790BC /* MJIvar.m in Sources */,
+				B3BB05AF1C6C624200B605E1 /* TTAccountParam.m in Sources */,
+				B3BB05A31C6C330200B605E1 /* TTStatusTool.m in Sources */,
 				B3C813361C5EFC68002A37C5 /* TTTitleButton.m in Sources */,
 				B3766E9D1C696035006790BC /* TTAccountTool.m in Sources */,
 				B3C813421C5F228C002A37C5 /* TTOneViewController.m in Sources */,
 				B3766F0E1C69FF12006790BC /* MJFoundation.m in Sources */,
 				B3766ED61C698F02006790BC /* MBProgressHUD.m in Sources */,
+				B3BB05AB1C6C57BC00B605E1 /* TTStatusResult.m in Sources */,
 				B3C813261C5E0F9D002A37C5 /* TTDiscoverViewController.m in Sources */,
+				B3BB055D1C6AE54300B605E1 /* TTHttpTool.m in Sources */,
 				B3766F0D1C69FF12006790BC /* MJConst.m in Sources */,
 				B3C813331C5EF974002A37C5 /* TTNavigationController.m in Sources */,
 				B3766F111C69FF12006790BC /* NSObject+MJCoding.m in Sources */,
@@ -920,6 +1070,7 @@
 				B3766EDA1C69A8F2006790BC /* TTRootTool.m in Sources */,
 				B3C8133C1C5F0498002A37C5 /* TTCover.m in Sources */,
 				B3C8132D1C5E11FD002A37C5 /* TTSearchBar.m in Sources */,
+				B3BB05A81C6C556000B605E1 /* TTStatusParam.m in Sources */,
 				B3766ED41C698F02006790BC /* MBProgressHUD+MJ.m in Sources */,
 				B3C8133F1C5F07A6002A37C5 /* TTHomeViewController.m in Sources */,
 				B3C8132A1C5E1129002A37C5 /* UIView+Frame.m in Sources */,

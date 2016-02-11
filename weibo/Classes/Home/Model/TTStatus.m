@@ -17,7 +17,7 @@
  *
  *  @return <#return value description#>
  */
-+ (NSDictionary *)mj_objectClassInArray {
++ (NSDictionary *)objectClassInArray {
     return @{@"pic_urls" : [TTPhoto class]};
 }
 
