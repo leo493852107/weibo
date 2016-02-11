@@ -81,7 +81,7 @@ document.getElementById("myH1").innerHTML="Welcome to my HomePage"; //javascript
 ```
 ```cpp
 string &operator+(const string& A, const string& B) //cpp
-
+```
 
 ##<a name="findMore"/>更多
 [README更多语法](https://github.com/guodongxiaren/README "README更多语法")
