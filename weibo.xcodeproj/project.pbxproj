@@ -12,9 +12,7 @@
 		B31486221C5CA7F200D43094 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31486201C5CA7F200D43094 /* LaunchScreen.storyboard */; };
 		B314862D1C5CA7F200D43094 /* weiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B314862C1C5CA7F200D43094 /* weiboTests.m */; };
 		B31486381C5CA7F200D43094 /* weiboUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B31486371C5CA7F200D43094 /* weiboUITests.m */; };
-		B327C6951C603FAA00C89B9E /* TTOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B327C6941C603FAA00C89B9E /* TTOneViewController.xib */; };
 		B327C7501C63381000C89B9E /* TTTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B327C74E1C63381000C89B9E /* TTTwoViewController.m */; };
-		B327C7511C63381000C89B9E /* TTTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B327C74F1C63381000C89B9E /* TTTwoViewController.xib */; };
 		B3766E821C65A1CB006790BC /* TTNewFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766E811C65A1CB006790BC /* TTNewFeatureController.m */; };
 		B3766E851C65C3C8006790BC /* TTNewFeatureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766E841C65C3C8006790BC /* TTNewFeatureCell.m */; };
 		B3766E8C1C66E509006790BC /* TTOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766E8B1C66E509006790BC /* TTOAuthViewController.m */; };
@@ -107,10 +105,8 @@
 		B31486331C5CA7F200D43094 /* weiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31486371C5CA7F200D43094 /* weiboUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weiboUITests.m; sourceTree = "<group>"; };
 		B31486391C5CA7F200D43094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B327C6941C603FAA00C89B9E /* TTOneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTOneViewController.xib; sourceTree = "<group>"; };
 		B327C74D1C63381000C89B9E /* TTTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTwoViewController.h; sourceTree = "<group>"; };
 		B327C74E1C63381000C89B9E /* TTTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTwoViewController.m; sourceTree = "<group>"; };
-		B327C74F1C63381000C89B9E /* TTTwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTTwoViewController.xib; sourceTree = "<group>"; };
 		B3766E801C65A1CB006790BC /* TTNewFeatureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNewFeatureController.h; sourceTree = "<group>"; };
 		B3766E811C65A1CB006790BC /* TTNewFeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTNewFeatureController.m; sourceTree = "<group>"; };
 		B3766E831C65C3C8006790BC /* TTNewFeatureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNewFeatureCell.h; sourceTree = "<group>"; };
@@ -664,10 +660,8 @@
 			children = (
 				B3C813401C5F228C002A37C5 /* TTOneViewController.h */,
 				B3C813411C5F228C002A37C5 /* TTOneViewController.m */,
-				B327C6941C603FAA00C89B9E /* TTOneViewController.xib */,
 				B327C74D1C63381000C89B9E /* TTTwoViewController.h */,
 				B327C74E1C63381000C89B9E /* TTTwoViewController.m */,
-				B327C74F1C63381000C89B9E /* TTTwoViewController.xib */,
 				B3C8133D1C5F07A6002A37C5 /* TTHomeViewController.h */,
 				B3C8133E1C5F07A6002A37C5 /* TTHomeViewController.m */,
 			);
@@ -947,11 +941,9 @@
 			files = (
 				B3BB05C61C6C7A0E00B605E1 /* 爸比我要喝奶奶.mp3 in Resources */,
 				B31486221C5CA7F200D43094 /* LaunchScreen.storyboard in Resources */,
-				B327C7511C63381000C89B9E /* TTTwoViewController.xib in Resources */,
 				B3BB05C51C6C7A0E00B605E1 /* silence.mp3 in Resources */,
 				B3766EF51C69EE42006790BC /* MJRefresh.bundle in Resources */,
 				B3766ED51C698F02006790BC /* MBProgressHUD.bundle in Resources */,
-				B327C6951C603FAA00C89B9E /* TTOneViewController.xib in Resources */,
 				B314861F1C5CA7F200D43094 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
