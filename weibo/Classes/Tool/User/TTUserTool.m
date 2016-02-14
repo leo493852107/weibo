@@ -18,6 +18,8 @@
 
 #import "MJExtension.h"
 
+#import "TTUser.h"
+
 @implementation TTUserTool
 
 + (void)unreadWithSuccess:(void (^)(TTUserResult *))success failure:(void (^)(NSError *))failure {
@@ -38,6 +40,28 @@
         
     } failure:^(NSError *error) {
         
+        if (failure) {
+            failure(error);
+        }
+    }];
+}
+
+
++ (void)userInfoWithSuccess:(void (^)(TTUser *))success failure:(void (^)(NSError *))failure {
+    
+    // 创建参数模型
+    TTUserParam *param = [TTUserParam param];
+    param.uid = [TTAccountTool account].uid;
+    
+    [TTHttpTool GET:@"https://api.weibo.com/2/users/show.json" parameters:param.keyValues success:^(id responseObject) {
+        
+        // 用户字典转模型
+        TTUser *user = [TTUser objectWithKeyValues:responseObject];
+        if (success) {
+            success(user);
+        }
+        
+    } failure:^(NSError *error) {
         if (failure) {
             failure(error);
         }

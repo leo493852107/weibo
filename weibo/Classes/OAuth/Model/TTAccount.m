@@ -12,9 +12,15 @@
 #define TTUidKey @"uid"
 #define TTExpires_inKey @"expires_in"
 #define TTExpires_dateKey @"date"
+#define TTNameKey @"name"
+
+#import "MJExtension.h"
 
 
 @implementation TTAccount
+
+// 底层遍历当前类的所有属性，一个一个归档和解档
+MJCodingImplementation
 
 + (instancetype)accountWithDict:(NSDictionary *)dict {
     TTAccount *account = [[self alloc] init];
@@ -36,12 +42,13 @@
  *
  *  @param aCoder <#aCoder description#>
  */
-- (void)encodeWithCoder:(NSCoder *)aCoder {
-    [aCoder encodeObject:_access_token forKey:TTAccountTokenKey];
-    [aCoder encodeObject:_expires_in forKey:TTExpires_inKey];
-    [aCoder encodeObject:_uid forKey:TTUidKey];
-    [aCoder encodeObject:_expires_date forKey:TTExpires_dateKey];
-}
+//- (void)encodeWithCoder:(NSCoder *)aCoder {
+//    [aCoder encodeObject:_access_token forKey:TTAccountTokenKey];
+//    [aCoder encodeObject:_expires_in forKey:TTExpires_inKey];
+//    [aCoder encodeObject:_uid forKey:TTUidKey];
+//    [aCoder encodeObject:_expires_date forKey:TTExpires_dateKey];
+//    [aCoder encodeObject:_name forKey:TTNameKey];
+//}
 
 /**
  *  解档的时候调用，告诉系统哪个属性需要解档，如何解档
@@ -50,17 +57,18 @@
  *
  *  @return <#return value description#>
  */
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
-    if (self = [super init]) {
-        // 一定要记得赋值
-        _access_token = [aDecoder decodeObjectForKey:TTAccountTokenKey];
-        _expires_in = [aDecoder decodeObjectForKey:TTExpires_inKey];
-        _uid = [aDecoder decodeObjectForKey:TTUidKey];
-        _expires_date = [aDecoder decodeObjectForKey:TTExpires_dateKey];
-    }
-    
-    return self;
-}
+//- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+//    if (self = [super init]) {
+//        // 一定要记得赋值
+//        _access_token = [aDecoder decodeObjectForKey:TTAccountTokenKey];
+//        _expires_in = [aDecoder decodeObjectForKey:TTExpires_inKey];
+//        _uid = [aDecoder decodeObjectForKey:TTUidKey];
+//        _expires_date = [aDecoder decodeObjectForKey:TTExpires_dateKey];
+//        _name = [aDecoder decodeObjectForKey:TTNameKey];
+//    }
+//    
+//    return self;
+//}
 
 /**
  *  KVC底层实现：遍历字典里的所有key(uid)

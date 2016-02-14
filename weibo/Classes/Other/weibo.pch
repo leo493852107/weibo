@@ -26,4 +26,12 @@
 
 #endif
 
+/*------------- cell ------------------*/
+#define TTStatusCellMargin 10
+#define TTNameFont [UIFont systemFontOfSize:13]
+#define TTTimeFont [UIFont systemFontOfSize:12]
+#define TTSourceFont TTTimeFont
+#define TTTextFont [UIFont systemFontOfSize:15]
+#define TTScreenW [UIScreen mainScreen].bounds.size.width
+
 #endif

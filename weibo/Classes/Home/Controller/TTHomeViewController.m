@@ -27,25 +27,35 @@
 #import "MJRefresh.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
-#import "TTHttpTool.h"
 #import "TTStatusTool.h"
+#import "TTUserTool.h"
+#import "TTAccount.h"
+#import "TTAccountTool.h"
+
+#import "TTStatusCell.h"
+
+#import "TTStatusFrame.h"
 
 @interface TTHomeViewController ()<TTCoverDelegate>
 
 @property (nonatomic, weak) TTTitleButton *titleButton;
 @property (nonatomic, strong) TTOneViewController *one;
 
-@property (nonatomic, strong) NSMutableArray *statuses;
+
+/**
+ *  ViewModel:TTStatusFrame
+ */
+@property (nonatomic, strong) NSMutableArray *statusFrames;
 
 @end
 
 @implementation TTHomeViewController
 
 - (NSMutableArray *)statuses {
-    if (_statuses == nil) {
-        _statuses = [NSMutableArray array];
+    if (_statusFrames == nil) {
+        _statusFrames = [NSMutableArray array];
     }
-    return _statuses;
+    return _statusFrames;
 }
 
 - (TTOneViewController *)one {
@@ -63,6 +73,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.tableView.backgroundColor = [UIColor lightGrayColor];
+    
+    // 取消分割线
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
     // 设置导航条内容
     [self setUpNavigationBar];
     
@@ -78,6 +93,24 @@
     // 添加上拉刷新控件
     [self.tableView addFooterWithTarget:self action:@selector(loadMoreStatus)];
 
+    // 一开始展示之前的微博名称，然后再发送用户信息的请求，直接赋值
+    
+    // 请求当前用户的昵称
+    [TTUserTool userInfoWithSuccess:^(TTUser *user) {
+        // 请求当前账号的用户信息
+        // 设置导航条的标题
+        [self.titleButton setTitle:user.name forState:UIControlStateNormal];
+        
+        // 获取当前的账号
+        TTAccount *account = [TTAccountTool account];
+        account.name = user.name;
+
+        // 保存用户的名称
+        [TTAccountTool saveAccount:account];
+        
+    } failure:^(NSError *error) {
+        
+    }];
     
 }
 
@@ -94,9 +127,10 @@
 - (void)loadMoreStatus {
     
     NSString *maxIdStr = nil;
-    if (self.statuses.count) {
+    if (self.statusFrames.count) {
         // 有微博数据，才需要下拉刷新
-        long long maxId = [[[self.statuses lastObject] idstr] longLongValue] - 1;
+        TTStatus *status = [self.statusFrames[0] status];
+        long long maxId = [[status idstr] longLongValue] - 1;
         maxIdStr = [NSString stringWithFormat:@"%lld", maxId];
         
     }
@@ -105,8 +139,16 @@
         // 结束上拉刷新
         [self.tableView footerEndRefreshing];
         
+        // 模型转换视图模型 TTStatus -> TTStatusFrame
+        NSMutableArray *statusFrameArr = [NSMutableArray array];
+        for (TTStatus *status in statuses) {
+            TTStatusFrame *statusFrame = [[TTStatusFrame alloc] init];
+            statusFrame.status = status;
+            [statusFrameArr addObject:statusFrame];
+        }
+        
         // 把数组中的元素添加进去，注： 不是 addObject 把数组添加进去
-        [self.statuses addObjectsFromArray:statuses];
+        [self.statuses addObjectsFromArray:statusFrameArr];
         
         // 刷新表格
         [self.tableView reloadData];
@@ -120,25 +162,82 @@
 #pragma mark - 请求最新的微博数据
 - (void)loadNewStatus {
     NSString *sinceId = nil;
-    if (self.statuses.count) {
+    if (self.statusFrames.count) {
         // 有微博数据，才需要下拉刷新
-        sinceId = [self.statuses[0] idstr];
+        TTStatus *status = [self.statusFrames[0] status];
+        sinceId = status.idstr;
     }
     [TTStatusTool newStatusWithSinceId:sinceId success:^(NSArray *statuses) {
         // 请求成功的block
         
+        // 展示最新的微博数
+        [self showNewStatusCount:statuses.count];
+        
         // 结束下拉刷新
         [self.tableView headerEndRefreshing];
         
+        // 模型转换视图模型 TTStatus -> TTStatusFrame
+        NSMutableArray *statusesFrameArr = [NSMutableArray array];
+        for (TTStatus *status in statuses) {
+            TTStatusFrame *statusFrame = [[TTStatusFrame alloc] init];
+            statusFrame.status = status;
+            [statusesFrameArr addObject:statusFrame];
+        }
+        
+        
         NSIndexSet *indexSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, statuses.count)];
         // 把最新的微博数插入到最前面
-        [self.statuses insertObjects:statuses atIndexes:indexSet];
+        [self.statuses insertObjects:statusesFrameArr atIndexes:indexSet];
         
         // 刷新表格
         [self.tableView reloadData];
         
         
     } failure:^(NSError *error) {
+        
+    }];
+    
+}
+
+
+#pragma mark - 展示最新的微博数
+- (void)showNewStatusCount:(int)count {
+    if (count == 0) {
+        return;
+    }
+    
+    // 展示最新的微博数
+    // 高度设为35
+    CGFloat h = 35;
+    CGFloat y = CGRectGetMaxY(self.navigationController.navigationBar.frame) - h;
+    CGFloat x = 0;
+    CGFloat w = self.view.width;
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(x, y, w, h)];
+    
+    label.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"timeline_new_status_background"]];
+    label.textColor = [UIColor whiteColor];
+    label.text = [NSString stringWithFormat:@"最新微博数%d条", count];
+    label.textAlignment = NSTextAlignmentCenter;
+    
+    // 插入导航控制器下导航条下面
+    [self.navigationController.view insertSubview:label belowSubview:self.navigationController.navigationBar];
+    
+    // 动画往下面平移
+    [UIView animateWithDuration:0.25 animations:^{
+        
+        label.transform = CGAffineTransformMakeTranslation(0, h);
+        
+    } completion:^(BOOL finished) {
+        
+        // 往上面平移
+        [UIView animateKeyframesWithDuration:0.25 delay:2 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
+            
+            // 还原
+            label.transform = CGAffineTransformIdentity;
+        } completion:^(BOOL finished) {
+            [label removeFromSuperview];
+        }];
         
     }];
     
@@ -157,7 +256,9 @@
     TTTitleButton *titleButton = [TTTitleButton buttonWithType:UIButtonTypeCustom];
     _titleButton = titleButton;
     
-    [titleButton setTitle:@"首页" forState:UIControlStateNormal];
+    
+    NSString *title = [TTAccountTool account].name ? : @"首页";
+    [titleButton setTitle:title forState:UIControlStateNormal];
     [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_up"] forState:UIControlStateNormal];
     [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_up"] forState:UIControlStateSelected];
     
@@ -205,26 +306,38 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.statuses.count;
+    return self.statusFrames.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *ID = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-    }
+    // 创建cell
+    TTStatusCell *cell = [TTStatusCell cellWithTableView:tableView];
     
     // 获取status模型
-    TTStatus *status = self.statuses[indexPath.row];
+    TTStatusFrame *statusFrame = self.statuses[indexPath.row];
+    
+    // 给cell传递模型
+    cell.statusFrame = statusFrame;
     
     // 用户昵称
-    cell.textLabel.text = status.user.name;
-    [cell.imageView sd_setImageWithURL:status.user.profile_image_url placeholderImage:[UIImage imageNamed:@"timeline_image_placeholder"]];
-    cell.detailTextLabel.text = status.text;
+//    cell.textLabel.text = status.user.name;
+//    [cell.imageView sd_setImageWithURL:status.user.profile_image_url placeholderImage:[UIImage imageNamed:@"timeline_image_placeholder"]];
+//    cell.detailTextLabel.text = status.text;
     
     return cell;
+    
+}
+
+
+
+// 返回cell高度
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    // 获取status模型
+    TTStatusFrame *statusFrame = self.statusFrames[indexPath.row];
+    
+    return statusFrame.cellHeight;
     
 }
 

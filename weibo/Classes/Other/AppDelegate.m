@@ -38,6 +38,16 @@
     UIUserNotificationSettings *setting = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge categories:nil];
     [application registerUserNotificationSettings:setting];
     
+    // 在真机上后台播放，设置音频会话
+    AVAudioSession *session = [AVAudioSession sharedInstance];
+    
+    // 设置会话类型(后台播放)
+    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
+    
+    // 激活
+    [session setActive:YES error:nil];
+    
+    
     // 创建窗口
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     

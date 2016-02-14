@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		87F4B6B56170C7D70CD1839E /* libPods-weibo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF37F41ED74AFD42309290D /* libPods-weibo.a */; };
+		B30959ED1C705805009C2384 /* NSDate+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = B30959EC1C705805009C2384 /* NSDate+MJ.m */; };
+		B30EBFDD1C6DCCAB00AFD00A /* TTStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B30EBFDC1C6DCCAB00AFD00A /* TTStatusCell.m */; };
+		B30EBFE01C6DCD8000AFD00A /* TTOriginalView.m in Sources */ = {isa = PBXBuildFile; fileRef = B30EBFDF1C6DCD8000AFD00A /* TTOriginalView.m */; };
+		B30EBFE31C6DCEE400AFD00A /* TTRetweetView.m in Sources */ = {isa = PBXBuildFile; fileRef = B30EBFE21C6DCEE400AFD00A /* TTRetweetView.m */; };
+		B30EBFE61C6DCF1900AFD00A /* TTStatusToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B30EBFE51C6DCF1900AFD00A /* TTStatusToolBar.m */; };
+		B30EBFEA1C6DE19F00AFD00A /* TTStatusFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = B30EBFE91C6DE19F00AFD00A /* TTStatusFrame.m */; };
 		B314861F1C5CA7F200D43094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B314861E1C5CA7F200D43094 /* Assets.xcassets */; };
 		B31486221C5CA7F200D43094 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31486201C5CA7F200D43094 /* LaunchScreen.storyboard */; };
 		B314862D1C5CA7F200D43094 /* weiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B314862C1C5CA7F200D43094 /* weiboTests.m */; };
 		B31486381C5CA7F200D43094 /* weiboUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B31486371C5CA7F200D43094 /* weiboUITests.m */; };
-		B327C7501C63381000C89B9E /* TTTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B327C74E1C63381000C89B9E /* TTTwoViewController.m */; };
 		B3766E821C65A1CB006790BC /* TTNewFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766E811C65A1CB006790BC /* TTNewFeatureController.m */; };
 		B3766E851C65C3C8006790BC /* TTNewFeatureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766E841C65C3C8006790BC /* TTNewFeatureCell.m */; };
 		B3766E8C1C66E509006790BC /* TTOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3766E8B1C66E509006790BC /* TTOAuthViewController.m */; };
@@ -95,6 +100,18 @@
 		6DF37F41ED74AFD42309290D /* libPods-weibo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-weibo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F45FA89B5DE4974F9148990 /* Pods-weibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weibo/Pods-weibo.debug.xcconfig"; sourceTree = "<group>"; };
 		A5F4AC93093C7A70AADB6CFA /* Pods-weibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-weibo/Pods-weibo.release.xcconfig"; sourceTree = "<group>"; };
+		B30959EB1C705805009C2384 /* NSDate+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MJ.h"; sourceTree = "<group>"; };
+		B30959EC1C705805009C2384 /* NSDate+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MJ.m"; sourceTree = "<group>"; };
+		B30EBFDB1C6DCCAB00AFD00A /* TTStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStatusCell.h; sourceTree = "<group>"; };
+		B30EBFDC1C6DCCAB00AFD00A /* TTStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStatusCell.m; sourceTree = "<group>"; };
+		B30EBFDE1C6DCD8000AFD00A /* TTOriginalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTOriginalView.h; sourceTree = "<group>"; };
+		B30EBFDF1C6DCD8000AFD00A /* TTOriginalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTOriginalView.m; sourceTree = "<group>"; };
+		B30EBFE11C6DCEE400AFD00A /* TTRetweetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRetweetView.h; sourceTree = "<group>"; };
+		B30EBFE21C6DCEE400AFD00A /* TTRetweetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRetweetView.m; sourceTree = "<group>"; };
+		B30EBFE41C6DCF1900AFD00A /* TTStatusToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStatusToolBar.h; sourceTree = "<group>"; };
+		B30EBFE51C6DCF1900AFD00A /* TTStatusToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStatusToolBar.m; sourceTree = "<group>"; };
+		B30EBFE81C6DE19F00AFD00A /* TTStatusFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStatusFrame.h; sourceTree = "<group>"; };
+		B30EBFE91C6DE19F00AFD00A /* TTStatusFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStatusFrame.m; sourceTree = "<group>"; };
 		B314860F1C5CA7F200D43094 /* weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B314861E1C5CA7F200D43094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B31486211C5CA7F200D43094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -105,8 +122,6 @@
 		B31486331C5CA7F200D43094 /* weiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31486371C5CA7F200D43094 /* weiboUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weiboUITests.m; sourceTree = "<group>"; };
 		B31486391C5CA7F200D43094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B327C74D1C63381000C89B9E /* TTTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTwoViewController.h; sourceTree = "<group>"; };
-		B327C74E1C63381000C89B9E /* TTTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTwoViewController.m; sourceTree = "<group>"; };
 		B3766E801C65A1CB006790BC /* TTNewFeatureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNewFeatureController.h; sourceTree = "<group>"; };
 		B3766E811C65A1CB006790BC /* TTNewFeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTNewFeatureController.m; sourceTree = "<group>"; };
 		B3766E831C65C3C8006790BC /* TTNewFeatureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNewFeatureCell.h; sourceTree = "<group>"; };
@@ -267,6 +282,30 @@
 				6DF37F41ED74AFD42309290D /* libPods-weibo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B30EBFDA1C6DCC8F00AFD00A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B30EBFDB1C6DCCAB00AFD00A /* TTStatusCell.h */,
+				B30EBFDC1C6DCCAB00AFD00A /* TTStatusCell.m */,
+				B30EBFDE1C6DCD8000AFD00A /* TTOriginalView.h */,
+				B30EBFDF1C6DCD8000AFD00A /* TTOriginalView.m */,
+				B30EBFE11C6DCEE400AFD00A /* TTRetweetView.h */,
+				B30EBFE21C6DCEE400AFD00A /* TTRetweetView.m */,
+				B30EBFE41C6DCF1900AFD00A /* TTStatusToolBar.h */,
+				B30EBFE51C6DCF1900AFD00A /* TTStatusToolBar.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B30EBFE71C6DE16F00AFD00A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B30EBFE81C6DE19F00AFD00A /* TTStatusFrame.h */,
+				B30EBFE91C6DE19F00AFD00A /* TTStatusFrame.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		B31486061C5CA7F200D43094 = {
@@ -660,8 +699,6 @@
 			children = (
 				B3C813401C5F228C002A37C5 /* TTOneViewController.h */,
 				B3C813411C5F228C002A37C5 /* TTOneViewController.m */,
-				B327C74D1C63381000C89B9E /* TTTwoViewController.h */,
-				B327C74E1C63381000C89B9E /* TTTwoViewController.m */,
 				B3C8133D1C5F07A6002A37C5 /* TTHomeViewController.h */,
 				B3C8133E1C5F07A6002A37C5 /* TTHomeViewController.m */,
 			);
@@ -671,6 +708,7 @@
 		B3C813061C5E041F002A37C5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B30EBFE71C6DE16F00AFD00A /* ViewModel */,
 				B3766EDB1C69D358006790BC /* TTStatus.h */,
 				B3766EDC1C69D358006790BC /* TTStatus.m */,
 				B3766EDE1C69D64C006790BC /* TTUser.h */,
@@ -684,6 +722,7 @@
 		B3C813071C5E041F002A37C5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B30EBFDA1C6DCC8F00AFD00A /* Cell */,
 				B3C813341C5EFC68002A37C5 /* TTTitleButton.h */,
 				B3C813351C5EFC68002A37C5 /* TTTitleButton.m */,
 				B3C813371C5F014F002A37C5 /* TTPopMenu.h */,
@@ -784,6 +823,8 @@
 		B3C813171C5E041F002A37C5 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				B30959EB1C705805009C2384 /* NSDate+MJ.h */,
+				B30959EC1C705805009C2384 /* NSDate+MJ.m */,
 				B3C813181C5E041F002A37C5 /* UIImage+Image.h */,
 				B3C813191C5E041F002A37C5 /* UIImage+Image.m */,
 				B3C813281C5E1129002A37C5 /* UIView+Frame.h */,
@@ -1019,7 +1060,7 @@
 			files = (
 				B3766EFA1C69EE42006790BC /* UIScrollView+MJExtension.m in Sources */,
 				B3C813451C5F2482002A37C5 /* TTMessageViewController.m in Sources */,
-				B327C7501C63381000C89B9E /* TTTwoViewController.m in Sources */,
+				B30EBFE01C6DCD8000AFD00A /* TTOriginalView.m in Sources */,
 				B3C813231C5E041F002A37C5 /* main.m in Sources */,
 				B3766F101C69FF12006790BC /* MJType.m in Sources */,
 				B3BB05B51C6C67ED00B605E1 /* TTUserParam.m in Sources */,
@@ -1030,10 +1071,12 @@
 				B3C813301C5EF390002A37C5 /* UIBarButtonItem+Item.m in Sources */,
 				B3C8134B1C5F2804002A37C5 /* TTTabBarButton.m in Sources */,
 				B3766EF81C69EE42006790BC /* MJRefreshFooterView.m in Sources */,
+				B30EBFE31C6DCEE400AFD00A /* TTRetweetView.m in Sources */,
 				B3766EF71C69EE42006790BC /* MJRefreshConst.m in Sources */,
 				B3BB05BC1C6C69F800B605E1 /* TTUserResult.m in Sources */,
 				B3766E851C65C3C8006790BC /* TTNewFeatureCell.m in Sources */,
 				B3766F131C69FF12006790BC /* NSObject+MJKeyValue.m in Sources */,
+				B30EBFE61C6DCF1900AFD00A /* TTStatusToolBar.m in Sources */,
 				B3C813391C5F014F002A37C5 /* TTPopMenu.m in Sources */,
 				B3BB05B91C6C688000B605E1 /* TTBaseParam.m in Sources */,
 				B3766EF61C69EE42006790BC /* MJRefreshBaseView.m in Sources */,
@@ -1051,6 +1094,7 @@
 				B3C813421C5F228C002A37C5 /* TTOneViewController.m in Sources */,
 				B3766F0E1C69FF12006790BC /* MJFoundation.m in Sources */,
 				B3766ED61C698F02006790BC /* MBProgressHUD.m in Sources */,
+				B30EBFDD1C6DCCAB00AFD00A /* TTStatusCell.m in Sources */,
 				B3BB05AB1C6C57BC00B605E1 /* TTStatusResult.m in Sources */,
 				B3C813261C5E0F9D002A37C5 /* TTDiscoverViewController.m in Sources */,
 				B3BB055D1C6AE54300B605E1 /* TTHttpTool.m in Sources */,
@@ -1063,10 +1107,12 @@
 				B3C8133C1C5F0498002A37C5 /* TTCover.m in Sources */,
 				B3C8132D1C5E11FD002A37C5 /* TTSearchBar.m in Sources */,
 				B3BB05A81C6C556000B605E1 /* TTStatusParam.m in Sources */,
+				B30EBFEA1C6DE19F00AFD00A /* TTStatusFrame.m in Sources */,
 				B3766ED41C698F02006790BC /* MBProgressHUD+MJ.m in Sources */,
 				B3C8133F1C5F07A6002A37C5 /* TTHomeViewController.m in Sources */,
 				B3C8132A1C5E1129002A37C5 /* UIView+Frame.m in Sources */,
 				B3C813221C5E041F002A37C5 /* UIImage+Image.m in Sources */,
+				B30959ED1C705805009C2384 /* NSDate+MJ.m in Sources */,
 				B3766E821C65A1CB006790BC /* TTNewFeatureController.m in Sources */,
 				B3C813201C5E041F002A37C5 /* TTTabBar.m in Sources */,
 				B3C813211C5E041F002A37C5 /* AppDelegate.m in Sources */,

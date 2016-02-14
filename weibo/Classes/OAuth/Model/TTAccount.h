@@ -37,6 +37,11 @@
 @property (nonatomic, copy) NSString *uid;
 
 /**
+ *  用户的昵称
+ */
+@property (nonatomic, copy) NSString *name;
+
+/**
  *  过期的时间 = 当前保存时间 + 有效期
  */
 @property (nonatomic, strong) NSDate *expires_date;
