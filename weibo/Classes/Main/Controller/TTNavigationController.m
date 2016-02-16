@@ -25,6 +25,13 @@
     NSMutableDictionary *titleAttr = [NSMutableDictionary dictionary];
     titleAttr[NSForegroundColorAttributeName] = [UIColor orangeColor];
     [item setTitleTextAttributes:titleAttr forState:UIControlStateNormal];
+    
+    // 主要：导航条上按钮不可用文字属性设置，用模型的属性设置是不好使
+//    // 设置不可用状态
+//    titleAttr = [NSMutableDictionary dictionary];
+//    titleAttr[NSForegroundColorAttributeName] = [UIColor lightGrayColor];
+//    [item setTitleTextAttributes:titleAttr forState:UIControlStateDisabled];
+    
 }
 
 - (void)viewDidLoad {

@@ -13,6 +13,7 @@
 #import "TTStatusToolBar.h"
 
 #import "TTStatusFrame.h"
+#import "TTStatus.h"
 
 @interface TTStatusCell ()
 
@@ -97,12 +98,18 @@
     _originalView.frame = statusFrame.originalViewFrame;
     _originalView.statusFrame = statusFrame;
     
-    // 设置转发微博的frame
-    _retweetView.frame = statusFrame.retweetViewFrame;
-    _retweetView.statusFrame = statusFrame;
+    if (statusFrame.status.retweeted_status) {
+        // 设置转发微博的frame
+        _retweetView.frame = statusFrame.retweetViewFrame;
+        _retweetView.statusFrame = statusFrame;
+        _retweetView.hidden = NO;
+    } else {
+        _retweetView.hidden = YES;
+    }
     
     // 设置工具条的frame
     _toolBar.frame = statusFrame.toolBarFrame;
+    _toolBar.status = statusFrame.status;
     
 }
 

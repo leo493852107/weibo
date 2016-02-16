@@ -20,6 +20,8 @@
 #import "TTUserTool.h"
 #import "TTUserResult.h"
 
+#import "TTComposeViewController.h"
+
 @interface TTTabBarController () <TTTabBarDelegate>
 
 @property (nonatomic, strong) NSMutableArray *items;
@@ -104,6 +106,15 @@
         [_home refresh];
     }
     self.selectedIndex = index;
+}
+
+// 点击加号按钮的时候调用
+- (void)tabBarDidClickPlusButton:(TTTabBar *)tabBar {
+    // 创建发送微博控制器
+    TTComposeViewController *composeVC = [[TTComposeViewController alloc] init];
+    TTNavigationController *nav = [[TTNavigationController alloc] initWithRootViewController:composeVC];
+    [self presentViewController:nav animated:YES completion:nil];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {

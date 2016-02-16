@@ -9,11 +9,22 @@
 /* Begin PBXBuildFile section */
 		87F4B6B56170C7D70CD1839E /* libPods-weibo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF37F41ED74AFD42309290D /* libPods-weibo.a */; };
 		B30959ED1C705805009C2384 /* NSDate+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = B30959EC1C705805009C2384 /* NSDate+MJ.m */; };
+		B30959F01C72C224009C2384 /* TTPhotosView.m in Sources */ = {isa = PBXBuildFile; fileRef = B30959EF1C72C224009C2384 /* TTPhotosView.m */; };
 		B30EBFDD1C6DCCAB00AFD00A /* TTStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B30EBFDC1C6DCCAB00AFD00A /* TTStatusCell.m */; };
 		B30EBFE01C6DCD8000AFD00A /* TTOriginalView.m in Sources */ = {isa = PBXBuildFile; fileRef = B30EBFDF1C6DCD8000AFD00A /* TTOriginalView.m */; };
 		B30EBFE31C6DCEE400AFD00A /* TTRetweetView.m in Sources */ = {isa = PBXBuildFile; fileRef = B30EBFE21C6DCEE400AFD00A /* TTRetweetView.m */; };
 		B30EBFE61C6DCF1900AFD00A /* TTStatusToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B30EBFE51C6DCF1900AFD00A /* TTStatusToolBar.m */; };
 		B30EBFEA1C6DE19F00AFD00A /* TTStatusFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = B30EBFE91C6DE19F00AFD00A /* TTStatusFrame.m */; };
+		B3135AF71C734CA7000FF8BF /* MJPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = B3135AE91C734CA7000FF8BF /* MJPhoto.m */; };
+		B3135AF81C734CA7000FF8BF /* MJPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B3135AEA1C734CA7000FF8BF /* MJPhotoBrowser.bundle */; };
+		B3135AF91C734CA7000FF8BF /* MJPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = B3135AEC1C734CA7000FF8BF /* MJPhotoBrowser.m */; };
+		B3135AFA1C734CA7000FF8BF /* MJPhotoLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3135AEE1C734CA7000FF8BF /* MJPhotoLoadingView.m */; };
+		B3135AFB1C734CA7000FF8BF /* MJPhotoProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3135AF01C734CA7000FF8BF /* MJPhotoProgressView.m */; };
+		B3135AFC1C734CA7000FF8BF /* MJPhotoToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = B3135AF21C734CA7000FF8BF /* MJPhotoToolbar.m */; };
+		B3135AFD1C734CA7000FF8BF /* MJPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3135AF41C734CA7000FF8BF /* MJPhotoView.m */; };
+		B3135AFE1C734CA7000FF8BF /* SDWebImageManager+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = B3135AF61C734CA7000FF8BF /* SDWebImageManager+MJ.m */; };
+		B3135B011C7350EB000FF8BF /* TTPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3135B001C7350EB000FF8BF /* TTPhotoView.m */; };
+		B3135B0B1C735957000FF8BF /* TTComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3135B0A1C735957000FF8BF /* TTComposeViewController.m */; };
 		B314861F1C5CA7F200D43094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B314861E1C5CA7F200D43094 /* Assets.xcassets */; };
 		B31486221C5CA7F200D43094 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31486201C5CA7F200D43094 /* LaunchScreen.storyboard */; };
 		B314862D1C5CA7F200D43094 /* weiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B314862C1C5CA7F200D43094 /* weiboTests.m */; };
@@ -102,6 +113,8 @@
 		A5F4AC93093C7A70AADB6CFA /* Pods-weibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-weibo/Pods-weibo.release.xcconfig"; sourceTree = "<group>"; };
 		B30959EB1C705805009C2384 /* NSDate+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MJ.h"; sourceTree = "<group>"; };
 		B30959EC1C705805009C2384 /* NSDate+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MJ.m"; sourceTree = "<group>"; };
+		B30959EE1C72C224009C2384 /* TTPhotosView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPhotosView.h; sourceTree = "<group>"; };
+		B30959EF1C72C224009C2384 /* TTPhotosView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTPhotosView.m; sourceTree = "<group>"; };
 		B30EBFDB1C6DCCAB00AFD00A /* TTStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStatusCell.h; sourceTree = "<group>"; };
 		B30EBFDC1C6DCCAB00AFD00A /* TTStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStatusCell.m; sourceTree = "<group>"; };
 		B30EBFDE1C6DCD8000AFD00A /* TTOriginalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTOriginalView.h; sourceTree = "<group>"; };
@@ -112,6 +125,25 @@
 		B30EBFE51C6DCF1900AFD00A /* TTStatusToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStatusToolBar.m; sourceTree = "<group>"; };
 		B30EBFE81C6DE19F00AFD00A /* TTStatusFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStatusFrame.h; sourceTree = "<group>"; };
 		B30EBFE91C6DE19F00AFD00A /* TTStatusFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStatusFrame.m; sourceTree = "<group>"; };
+		B3135AE81C734CA7000FF8BF /* MJPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhoto.h; sourceTree = "<group>"; };
+		B3135AE91C734CA7000FF8BF /* MJPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhoto.m; sourceTree = "<group>"; };
+		B3135AEA1C734CA7000FF8BF /* MJPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJPhotoBrowser.bundle; sourceTree = "<group>"; };
+		B3135AEB1C734CA7000FF8BF /* MJPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoBrowser.h; sourceTree = "<group>"; };
+		B3135AEC1C734CA7000FF8BF /* MJPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoBrowser.m; sourceTree = "<group>"; };
+		B3135AED1C734CA7000FF8BF /* MJPhotoLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoLoadingView.h; sourceTree = "<group>"; };
+		B3135AEE1C734CA7000FF8BF /* MJPhotoLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoLoadingView.m; sourceTree = "<group>"; };
+		B3135AEF1C734CA7000FF8BF /* MJPhotoProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoProgressView.h; sourceTree = "<group>"; };
+		B3135AF01C734CA7000FF8BF /* MJPhotoProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoProgressView.m; sourceTree = "<group>"; };
+		B3135AF11C734CA7000FF8BF /* MJPhotoToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoToolbar.h; sourceTree = "<group>"; };
+		B3135AF21C734CA7000FF8BF /* MJPhotoToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoToolbar.m; sourceTree = "<group>"; };
+		B3135AF31C734CA7000FF8BF /* MJPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoView.h; sourceTree = "<group>"; };
+		B3135AF41C734CA7000FF8BF /* MJPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoView.m; sourceTree = "<group>"; };
+		B3135AF51C734CA7000FF8BF /* SDWebImageManager+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDWebImageManager+MJ.h"; sourceTree = "<group>"; };
+		B3135AF61C734CA7000FF8BF /* SDWebImageManager+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDWebImageManager+MJ.m"; sourceTree = "<group>"; };
+		B3135AFF1C7350EB000FF8BF /* TTPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPhotoView.h; sourceTree = "<group>"; };
+		B3135B001C7350EB000FF8BF /* TTPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTPhotoView.m; sourceTree = "<group>"; };
+		B3135B091C735957000FF8BF /* TTComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTComposeViewController.h; sourceTree = "<group>"; };
+		B3135B0A1C735957000FF8BF /* TTComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTComposeViewController.m; sourceTree = "<group>"; };
 		B314860F1C5CA7F200D43094 /* weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B314861E1C5CA7F200D43094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B31486211C5CA7F200D43094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -295,6 +327,10 @@
 				B30EBFE21C6DCEE400AFD00A /* TTRetweetView.m */,
 				B30EBFE41C6DCF1900AFD00A /* TTStatusToolBar.h */,
 				B30EBFE51C6DCF1900AFD00A /* TTStatusToolBar.m */,
+				B30959EE1C72C224009C2384 /* TTPhotosView.h */,
+				B30959EF1C72C224009C2384 /* TTPhotosView.m */,
+				B3135AFF1C7350EB000FF8BF /* TTPhotoView.h */,
+				B3135B001C7350EB000FF8BF /* TTPhotoView.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -306,6 +342,61 @@
 				B30EBFE91C6DE19F00AFD00A /* TTStatusFrame.m */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B3135AE71C734CA7000FF8BF /* MJPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				B3135AE81C734CA7000FF8BF /* MJPhoto.h */,
+				B3135AE91C734CA7000FF8BF /* MJPhoto.m */,
+				B3135AEA1C734CA7000FF8BF /* MJPhotoBrowser.bundle */,
+				B3135AEB1C734CA7000FF8BF /* MJPhotoBrowser.h */,
+				B3135AEC1C734CA7000FF8BF /* MJPhotoBrowser.m */,
+				B3135AED1C734CA7000FF8BF /* MJPhotoLoadingView.h */,
+				B3135AEE1C734CA7000FF8BF /* MJPhotoLoadingView.m */,
+				B3135AEF1C734CA7000FF8BF /* MJPhotoProgressView.h */,
+				B3135AF01C734CA7000FF8BF /* MJPhotoProgressView.m */,
+				B3135AF11C734CA7000FF8BF /* MJPhotoToolbar.h */,
+				B3135AF21C734CA7000FF8BF /* MJPhotoToolbar.m */,
+				B3135AF31C734CA7000FF8BF /* MJPhotoView.h */,
+				B3135AF41C734CA7000FF8BF /* MJPhotoView.m */,
+				B3135AF51C734CA7000FF8BF /* SDWebImageManager+MJ.h */,
+				B3135AF61C734CA7000FF8BF /* SDWebImageManager+MJ.m */,
+			);
+			path = MJPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		B3135B021C73590C000FF8BF /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				B3135B031C73590C000FF8BF /* Controller */,
+				B3135B041C73590C000FF8BF /* Model */,
+				B3135B051C73590C000FF8BF /* View */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		B3135B031C73590C000FF8BF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B3135B091C735957000FF8BF /* TTComposeViewController.h */,
+				B3135B0A1C735957000FF8BF /* TTComposeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B3135B041C73590C000FF8BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3135B051C73590C000FF8BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		B31486061C5CA7F200D43094 = {
@@ -442,6 +533,7 @@
 		B3766E8D1C67227E006790BC /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				B3135AE71C734CA7000FF8BF /* MJPhotoBrowser */,
 				B3766EFD1C69FF12006790BC /* MJExtension */,
 				B3766EE41C69EE42006790BC /* MJRefresh */,
 				B3766ECE1C698F02006790BC /* MBProgressHUD */,
@@ -636,6 +728,7 @@
 		B3C812FF1C5E041F002A37C5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B3135B021C73590C000FF8BF /* Compose */,
 				B3766E991C696019006790BC /* Tool */,
 				B3766E861C66E4CD006790BC /* OAuth */,
 				B3766E7C1C65A191006790BC /* NewFeature */,
@@ -986,6 +1079,7 @@
 				B3766EF51C69EE42006790BC /* MJRefresh.bundle in Resources */,
 				B3766ED51C698F02006790BC /* MBProgressHUD.bundle in Resources */,
 				B314861F1C5CA7F200D43094 /* Assets.xcassets in Resources */,
+				B3135AF81C734CA7000FF8BF /* MJPhotoBrowser.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1059,6 +1153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3766EFA1C69EE42006790BC /* UIScrollView+MJExtension.m in Sources */,
+				B3135B0B1C735957000FF8BF /* TTComposeViewController.m in Sources */,
+				B3135AFB1C734CA7000FF8BF /* MJPhotoProgressView.m in Sources */,
 				B3C813451C5F2482002A37C5 /* TTMessageViewController.m in Sources */,
 				B30EBFE01C6DCD8000AFD00A /* TTOriginalView.m in Sources */,
 				B3C813231C5E041F002A37C5 /* main.m in Sources */,
@@ -1083,22 +1179,29 @@
 				B3766EDD1C69D358006790BC /* TTStatus.m in Sources */,
 				B3766EFC1C69EE42006790BC /* UIView+MJExtension.m in Sources */,
 				B3C8134E1C5F2859002A37C5 /* TTBadgeView.m in Sources */,
+				B3135AFA1C734CA7000FF8BF /* MJPhotoLoadingView.m in Sources */,
 				B3766E8C1C66E509006790BC /* TTOAuthViewController.m in Sources */,
 				B3766EF91C69EE42006790BC /* MJRefreshHeaderView.m in Sources */,
 				B3766EFB1C69EE42006790BC /* UIScrollView+MJRefresh.m in Sources */,
+				B3135AFE1C734CA7000FF8BF /* SDWebImageManager+MJ.m in Sources */,
 				B3766F0F1C69FF12006790BC /* MJIvar.m in Sources */,
 				B3BB05AF1C6C624200B605E1 /* TTAccountParam.m in Sources */,
 				B3BB05A31C6C330200B605E1 /* TTStatusTool.m in Sources */,
 				B3C813361C5EFC68002A37C5 /* TTTitleButton.m in Sources */,
+				B3135AFD1C734CA7000FF8BF /* MJPhotoView.m in Sources */,
 				B3766E9D1C696035006790BC /* TTAccountTool.m in Sources */,
 				B3C813421C5F228C002A37C5 /* TTOneViewController.m in Sources */,
 				B3766F0E1C69FF12006790BC /* MJFoundation.m in Sources */,
+				B3135AFC1C734CA7000FF8BF /* MJPhotoToolbar.m in Sources */,
 				B3766ED61C698F02006790BC /* MBProgressHUD.m in Sources */,
 				B30EBFDD1C6DCCAB00AFD00A /* TTStatusCell.m in Sources */,
 				B3BB05AB1C6C57BC00B605E1 /* TTStatusResult.m in Sources */,
 				B3C813261C5E0F9D002A37C5 /* TTDiscoverViewController.m in Sources */,
 				B3BB055D1C6AE54300B605E1 /* TTHttpTool.m in Sources */,
+				B3135B011C7350EB000FF8BF /* TTPhotoView.m in Sources */,
+				B3135AF91C734CA7000FF8BF /* MJPhotoBrowser.m in Sources */,
 				B3766F0D1C69FF12006790BC /* MJConst.m in Sources */,
+				B30959F01C72C224009C2384 /* TTPhotosView.m in Sources */,
 				B3C813331C5EF974002A37C5 /* TTNavigationController.m in Sources */,
 				B3766F111C69FF12006790BC /* NSObject+MJCoding.m in Sources */,
 				B3C8131F1C5E041F002A37C5 /* TTTabBarController.m in Sources */,
@@ -1109,6 +1212,7 @@
 				B3BB05A81C6C556000B605E1 /* TTStatusParam.m in Sources */,
 				B30EBFEA1C6DE19F00AFD00A /* TTStatusFrame.m in Sources */,
 				B3766ED41C698F02006790BC /* MBProgressHUD+MJ.m in Sources */,
+				B3135AF71C734CA7000FF8BF /* MJPhoto.m in Sources */,
 				B3C8133F1C5F07A6002A37C5 /* TTHomeViewController.m in Sources */,
 				B3C8132A1C5E1129002A37C5 /* UIView+Frame.m in Sources */,
 				B3C813221C5E041F002A37C5 /* UIImage+Image.m in Sources */,

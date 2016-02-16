@@ -15,6 +15,13 @@
 @optional
 - (void)tabBar:(TTTabBar *)tabBar didClickButton:(NSInteger)index;
 
+/**
+ *  点击加号按钮的时候调用
+ *
+ */
+- (void)tabBarDidClickPlusButton:(TTTabBar *)tabBar;
+
+
 @end
 
 @interface TTTabBar : UIView

@@ -129,7 +129,7 @@
     NSString *maxIdStr = nil;
     if (self.statusFrames.count) {
         // 有微博数据，才需要下拉刷新
-        TTStatus *status = [self.statusFrames[0] status];
+        TTStatus *status = [[self.statusFrames lastObject] status];
         long long maxId = [[status idstr] longLongValue] - 1;
         maxIdStr = [NSString stringWithFormat:@"%lld", maxId];
         

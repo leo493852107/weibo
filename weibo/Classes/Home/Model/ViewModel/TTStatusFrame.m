@@ -45,9 +45,7 @@
     // 头像
     CGFloat imageX = TTStatusCellMargin;
     CGFloat imageY = imageX;
-    
     CGFloat imageWH = 35;
-    
     _originalIconFrame = CGRectMake(imageX, imageY, imageWH, imageWH);
     
     // 昵称
@@ -64,17 +62,6 @@
         _originalVipFrame = CGRectMake(vipX, vipY, vipWH, vipWH);
     }
     
-    // 时间
-    CGFloat timeX = nameX;
-    CGFloat timeY = CGRectGetMaxY(_originalNameFrame) + TTStatusCellMargin * 0.5;
-    CGSize timeSize = [_status.created_at sizeWithFont:TTTimeFont];
-    _originalTimeFrame = (CGRect){{timeX, timeY},timeSize};
-    
-    // 来源
-    CGFloat sourceX = CGRectGetMaxX(_originalTimeFrame) + TTStatusCellMargin;
-    CGFloat sourceY = timeY;
-    CGSize sourceSize = [_status.source sizeWithFont:TTSourceFont];
-    _originalSourceFrame = (CGRect){{sourceX,sourceY}, sourceSize};
     
     // 正文
     CGFloat textX = imageX;
@@ -83,14 +70,41 @@
     CGSize textSize = [_status.text sizeWithFont:TTTextFont constrainedToSize:CGSizeMake(textW, MAXFLOAT)];
     _originalTextFrame = (CGRect){{textX, textY}, textSize};
     
+    CGFloat originH = CGRectGetMaxY(_originalTextFrame) + TTStatusCellMargin;
+    
+    // 配图
+    if (_status.pic_urls.count) {
+        CGFloat photosX = TTStatusCellMargin;
+        CGFloat photosY = CGRectGetMaxY(_originalTextFrame) + TTStatusCellMargin;
+        CGSize photosSize = [self photoSizeWithCount:_status.pic_urls.count];
+        
+        _originalPhotosFrame = (CGRect){{photosX, photosY}, photosSize};
+        originH = CGRectGetMaxY(_originalPhotosFrame) + TTStatusCellMargin;
+    }
+    
+    
     // 原创微博的frame
     CGFloat originX = 0;
     CGFloat originY = 10;
     CGFloat originW = TTScreenW;
-    CGFloat originH = CGRectGetMaxY(_originalTextFrame) + TTStatusCellMargin;
+
     _originalViewFrame = CGRectMake(originX, originY, originW, originH);
     
     
+    
+}
+
+#pragma mark - 计算配图的尺寸
+- (CGSize)photoSizeWithCount:(int)count {
+    // 获取总列数
+    int cols = count == 4 ? 2 : 3;
+    // 获取总行数
+    int rols = (count - 1) / cols + 1;
+    CGFloat photoWH = 70;
+    CGFloat w = cols * photoWH + (cols - 1) * TTStatusCellMargin;
+    CGFloat h = rols * photoWH + (cols - 1) * TTStatusCellMargin;
+    
+    return CGSizeMake(w, h);
     
 }
 
@@ -100,7 +114,7 @@
     CGFloat nameX = TTStatusCellMargin;
     CGFloat nameY = nameX;
     // 注意：一定要是转发微博的用户昵称
-    CGSize nameSize = [_status.retweeted_status.user.name sizeWithFont:TTNameFont];
+    CGSize nameSize = [_status.retweetName sizeWithFont:TTNameFont];
     _retweetNameFrame= (CGRect){{nameX, nameY},nameSize};
     
     // 正文
@@ -112,11 +126,24 @@
     CGSize textSize = [_status.retweeted_status.text sizeWithFont:TTTextFont constrainedToSize:CGSizeMake(textW, MAXFLOAT)];
     _retweetTextFrame = (CGRect){{textX, textY}, textSize};
     
+    CGFloat retweetH = CGRectGetMaxY(_retweetTextFrame) + TTStatusCellMargin;
+    
+    // 配图
+    int count = _status.retweeted_status.pic_urls.count;
+    if (count) {
+        CGFloat photosX = TTStatusCellMargin;
+        CGFloat photosY = CGRectGetMaxY(_retweetTextFrame) + TTStatusCellMargin;
+        CGSize photosSize = [self photoSizeWithCount:count];
+        
+        _retweetPhotosFrame = (CGRect){{photosX, photosY}, photosSize};
+        retweetH = CGRectGetMaxY(_retweetPhotosFrame) + TTStatusCellMargin;
+    }
+    
     // 转发微博的frame
     CGFloat retweetX = 0;
     CGFloat retweetY = CGRectGetMaxY(_originalViewFrame);
     CGFloat retweetW = TTScreenW;
-    CGFloat retweetH = CGRectGetMaxY(_retweetTextFrame) + TTStatusCellMargin;
+    
     _retweetViewFrame = CGRectMake(retweetX, retweetY, retweetW, retweetH);
     
     

@@ -19,6 +19,11 @@
 @property (nonatomic, strong) TTStatus *retweeted_status;
 
 /**
+ *  转发微博昵称
+ */
+@property (nonatomic, copy) NSString *retweetName;
+
+/**
  *  用户
  */
 @property (nonatomic, strong) TTUser *user;

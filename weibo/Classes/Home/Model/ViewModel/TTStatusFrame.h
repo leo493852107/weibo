@@ -43,6 +43,9 @@
 // 正文Frame
 @property (nonatomic, assign) CGRect originalTextFrame;
 
+// 配图frame
+@property (nonatomic, assign) CGRect originalPhotosFrame;
+
 
 
 
@@ -60,6 +63,8 @@
 // 正文Frame
 @property (nonatomic, assign) CGRect retweetTextFrame;
 
+// 配图frame
+@property (nonatomic, assign) CGRect retweetPhotosFrame;
 
 
 

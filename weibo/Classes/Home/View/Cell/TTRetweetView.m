@@ -10,12 +10,24 @@
 
 #import "TTStatus.h"
 #import "TTStatusFrame.h"
+#import "TTPhotosView.h"
 
 @interface TTRetweetView ()
 
+/**
+ *  昵称
+ */
 @property (nonatomic, weak) UILabel *nameLabel;
 
+/**
+ *  正文
+ */
 @property (nonatomic, weak) UILabel *textLabel;
+
+/**
+ *  配图
+ */
+@property (nonatomic, weak) TTPhotosView *photosView;
 
 @end
 
@@ -39,6 +51,7 @@
     
     // 昵称
     UILabel *nameLabel = [[UILabel alloc] init];
+    nameLabel.textColor = [UIColor blueColor];
     nameLabel.font = TTNameFont;
     [self addSubview:nameLabel];
     _nameLabel = nameLabel;
@@ -51,6 +64,10 @@
     [self addSubview:textLabel];
     _textLabel = textLabel;
     
+    // 配图
+    TTPhotosView *photosView = [[TTPhotosView alloc] init];
+    [self addSubview:photosView];
+    _photosView = photosView;
     
 }
 
@@ -62,11 +79,15 @@
     
     // 昵称
     _nameLabel.frame = statusFrame.retweetNameFrame;
-    _nameLabel.text = status.retweeted_status.user.name;
+    _nameLabel.text = status.retweetName;
     
     // 正文
     _textLabel.frame = statusFrame.retweetTextFrame;
     _textLabel.text = status.retweeted_status.text;
+    
+    // 配图
+    _photosView.frame = statusFrame.retweetPhotosFrame;
+    _photosView.pic_urls = status.retweeted_status.pic_urls;
     
 }
 

@@ -38,7 +38,14 @@
             // 今天
             // 计算跟当前时间差距
             NSDateComponents *cmp = [created_at deltaWithNow];
-            TTLog(@"%ld--%ld--%ld", (long)cmp.hour, (long)cmp.minute, (long)cmp.second);
+
+            if (cmp.hour >= 1) {
+                return [NSString stringWithFormat:@"%ld小时之前", cmp.hour];
+            } else if (cmp.minute > 1) {
+                return [NSString stringWithFormat:@"%ld分钟之前", cmp.minute];
+            } else {
+                return [NSString stringWithFormat:@"刚刚"];
+            }
             
         } else if ([created_at isYesterday]) {
             // 昨天
@@ -58,9 +65,25 @@
         
     }
     
-    TTLog(@"%@", _created_at);
-    
     return _created_at;
+}
+
+- (void)setSource:(NSString *)source {
+//    <a href="http://weibo.com/" rel="nofollow">微博 weibo.com</a>
+    NSRange range = [source rangeOfString:@">"];
+    source = [source substringFromIndex:range.location + range.length];
+    range = [source rangeOfString:@"<"];
+    source = [source substringToIndex:range.location];
+    source = [NSString stringWithFormat:@"来自%@", source];
+    _source = source;
+
+
+}
+
+- (void)setRetweeted_status:(TTStatus *)retweeted_status {
+    _retweeted_status = retweeted_status;
+    
+    _retweetName = [NSString stringWithFormat:@"@%@", retweeted_status.user.name];
 }
 
 @end

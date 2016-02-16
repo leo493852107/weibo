@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TTStatusToolBar : UIView
+@class TTStatus;
+@interface TTStatusToolBar : UIImageView
+
+@property (nonatomic, strong) TTStatus *status;
 
 @end

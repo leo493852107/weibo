@@ -78,12 +78,24 @@
         // sizeToFit：默认会根据按钮的背景图片或者image和文字计算按钮的最合适的尺寸
         [btn sizeToFit];
         
+        // 监听按钮的点击
+        [btn addTarget:self action:@selector(plusClick) forControlEvents:UIControlEventTouchUpInside];
+        
         _plusButton = btn;
         
         [self addSubview:_plusButton];
     }
     
     return _plusButton;
+}
+
+
+// 点击加号的时候调用
+- (void)plusClick {
+    // modal出控制器
+    if ([_delegate respondsToSelector:@selector(tabBarDidClickPlusButton:)]) {
+        [_delegate tabBarDidClickPlusButton:self];
+    }
 }
 
 /**

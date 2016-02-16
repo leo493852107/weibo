@@ -9,22 +9,46 @@
 #import "TTOriginalView.h"
 #import "TTStatusFrame.h"
 #import "TTStatus.h"
+#import "TTPhotosView.h"
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
 @interface TTOriginalView ()
 
+/**
+ *  头像
+ */
 @property (nonatomic, weak) UIImageView *iconView;
 
+/**
+ *  昵称
+ */
 @property (nonatomic, weak) UILabel *nameLabel;
 
+/**
+ *  vip
+ */
 @property (nonatomic, weak) UIImageView *vipView;
 
+/**
+ *  时间
+ */
 @property (nonatomic, weak) UILabel *timeLabel;
 
+/**
+ *  来源
+ */
 @property (nonatomic, weak) UILabel *sourceLabel;
 
+/**
+ *  正文
+ */
 @property (nonatomic, weak) UILabel *textLabel;
+
+/**
+ *  配图
+ */
+@property (nonatomic, weak) TTPhotosView *photosView;
 
 @end
 
@@ -72,6 +96,7 @@
     // 来源
     UILabel *sourceLabel = [[UILabel alloc] init];
     sourceLabel.font = TTSourceFont;
+    sourceLabel.textColor = [UIColor lightGrayColor];
     [self addSubview:sourceLabel];
     _sourceLabel = sourceLabel;
     
@@ -82,6 +107,10 @@
     [self addSubview:textLabel];
     _textLabel = textLabel;
     
+    // 配图
+    TTPhotosView *photosView = [[TTPhotosView alloc] init];
+    [self addSubview:photosView];
+    _photosView = photosView;
     
 }
 
@@ -123,6 +152,10 @@
     // 正文
     _textLabel.text = status.text;
     
+    // 配图
+    _photosView.pic_urls = status.pic_urls;
+    
+    
 }
 
 - (void)setUpFrame {
@@ -141,14 +174,25 @@
         _vipView.hidden = YES;
     }
     
-    // 时间
-    _timeLabel.frame = _statusFrame.originalTimeFrame;
+    // 时间 每次有新的时间的时间都需要计算时间的frame
+    TTStatus *status = _statusFrame.status;
+    CGFloat timeX = _nameLabel.frame.origin.x;
+    CGFloat timeY = CGRectGetMaxY(_nameLabel.frame) + TTStatusCellMargin * 0.5;
+    CGSize timeSize = [status.created_at sizeWithFont:TTTimeFont];
+    _timeLabel.frame = (CGRect){{timeX, timeY},timeSize};
+    
     
     // 来源
-    _sourceLabel.frame = _statusFrame.originalSourceFrame;
+    CGFloat sourceX = CGRectGetMaxX(_timeLabel.frame) + TTStatusCellMargin;
+    CGFloat sourceY = timeY;
+    CGSize sourceSize = [status.source sizeWithFont:TTSourceFont];
+    _sourceLabel.frame = (CGRect){{sourceX,sourceY}, sourceSize};
     
     // 正文
     _textLabel.frame = _statusFrame.originalTextFrame;
+    
+    // 配图
+    _photosView.frame = _statusFrame.originalPhotosFrame;
     
     
 }
