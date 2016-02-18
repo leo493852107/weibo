@@ -87,6 +87,8 @@
     
     // 配图
     _photosView.frame = statusFrame.retweetPhotosFrame;
+    
+    // 注意：这里一定要转让转发微博的配图数
     _photosView.pic_urls = status.retweeted_status.pic_urls;
     
 }

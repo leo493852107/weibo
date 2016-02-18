@@ -29,6 +29,10 @@
     // 日期格式字符串
     NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
     fmt.dateFormat = @"EEE MMM d HH:mm:ss Z yyyy";
+
+    // 设置格式本地化，日期格式字符串知道 是哪个国家的日期
+    fmt.locale = [NSLocale localeWithLocaleIdentifier:@"en_us"];
+    
     NSDate *created_at = [fmt dateFromString:_created_at];
     
     if ([created_at isThisYear]) {

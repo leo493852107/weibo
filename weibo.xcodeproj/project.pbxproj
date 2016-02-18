@@ -25,6 +25,11 @@
 		B3135AFE1C734CA7000FF8BF /* SDWebImageManager+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = B3135AF61C734CA7000FF8BF /* SDWebImageManager+MJ.m */; };
 		B3135B011C7350EB000FF8BF /* TTPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3135B001C7350EB000FF8BF /* TTPhotoView.m */; };
 		B3135B0B1C735957000FF8BF /* TTComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3135B0A1C735957000FF8BF /* TTComposeViewController.m */; };
+		B3135B0E1C74AA49000FF8BF /* TTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3135B0D1C74AA49000FF8BF /* TTTextView.m */; };
+		B3135B111C755C00000FF8BF /* TTComposeToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B3135B101C755C00000FF8BF /* TTComposeToolBar.m */; };
+		B3135B141C756AF4000FF8BF /* TTComposePhotosView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3135B131C756AF4000FF8BF /* TTComposePhotosView.m */; };
+		B3135B191C75774A000FF8BF /* TTComposeParam.m in Sources */ = {isa = PBXBuildFile; fileRef = B3135B181C75774A000FF8BF /* TTComposeParam.m */; };
+		B3135B1C1C757776000FF8BF /* TTComposeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B3135B1B1C757776000FF8BF /* TTComposeTool.m */; };
 		B314861F1C5CA7F200D43094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B314861E1C5CA7F200D43094 /* Assets.xcassets */; };
 		B31486221C5CA7F200D43094 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31486201C5CA7F200D43094 /* LaunchScreen.storyboard */; };
 		B314862D1C5CA7F200D43094 /* weiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B314862C1C5CA7F200D43094 /* weiboTests.m */; };
@@ -88,6 +93,7 @@
 		B3C813481C5F25A0002A37C5 /* TTProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C813471C5F25A0002A37C5 /* TTProfileViewController.m */; };
 		B3C8134B1C5F2804002A37C5 /* TTTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C8134A1C5F2804002A37C5 /* TTTabBarButton.m */; };
 		B3C8134E1C5F2859002A37C5 /* TTBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C8134D1C5F2859002A37C5 /* TTBadgeView.m */; };
+		B3D365211C7599FE003BB1EB /* TTUploadParam.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D365201C7599FE003BB1EB /* TTUploadParam.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +150,16 @@
 		B3135B001C7350EB000FF8BF /* TTPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTPhotoView.m; sourceTree = "<group>"; };
 		B3135B091C735957000FF8BF /* TTComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTComposeViewController.h; sourceTree = "<group>"; };
 		B3135B0A1C735957000FF8BF /* TTComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTComposeViewController.m; sourceTree = "<group>"; };
+		B3135B0C1C74AA49000FF8BF /* TTTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTextView.h; sourceTree = "<group>"; };
+		B3135B0D1C74AA49000FF8BF /* TTTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTextView.m; sourceTree = "<group>"; };
+		B3135B0F1C755C00000FF8BF /* TTComposeToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTComposeToolBar.h; sourceTree = "<group>"; };
+		B3135B101C755C00000FF8BF /* TTComposeToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTComposeToolBar.m; sourceTree = "<group>"; };
+		B3135B121C756AF4000FF8BF /* TTComposePhotosView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTComposePhotosView.h; sourceTree = "<group>"; };
+		B3135B131C756AF4000FF8BF /* TTComposePhotosView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTComposePhotosView.m; sourceTree = "<group>"; };
+		B3135B171C75774A000FF8BF /* TTComposeParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTComposeParam.h; sourceTree = "<group>"; };
+		B3135B181C75774A000FF8BF /* TTComposeParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTComposeParam.m; sourceTree = "<group>"; };
+		B3135B1A1C757776000FF8BF /* TTComposeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTComposeTool.h; sourceTree = "<group>"; };
+		B3135B1B1C757776000FF8BF /* TTComposeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTComposeTool.m; sourceTree = "<group>"; };
 		B314860F1C5CA7F200D43094 /* weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B314861E1C5CA7F200D43094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B31486211C5CA7F200D43094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -268,6 +284,8 @@
 		B3C8134A1C5F2804002A37C5 /* TTTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTabBarButton.m; sourceTree = "<group>"; };
 		B3C8134C1C5F2859002A37C5 /* TTBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBadgeView.h; sourceTree = "<group>"; };
 		B3C8134D1C5F2859002A37C5 /* TTBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBadgeView.m; sourceTree = "<group>"; };
+		B3D3651F1C7599FE003BB1EB /* TTUploadParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTUploadParam.h; sourceTree = "<group>"; };
+		B3D365201C7599FE003BB1EB /* TTUploadParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTUploadParam.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -395,8 +413,35 @@
 		B3135B051C73590C000FF8BF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B3135B0C1C74AA49000FF8BF /* TTTextView.h */,
+				B3135B0D1C74AA49000FF8BF /* TTTextView.m */,
+				B3135B0F1C755C00000FF8BF /* TTComposeToolBar.h */,
+				B3135B101C755C00000FF8BF /* TTComposeToolBar.m */,
+				B3135B121C756AF4000FF8BF /* TTComposePhotosView.h */,
+				B3135B131C756AF4000FF8BF /* TTComposePhotosView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B3135B151C7576C0000FF8BF /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				B3135B161C75772F000FF8BF /* Param */,
+				B3135B1A1C757776000FF8BF /* TTComposeTool.h */,
+				B3135B1B1C757776000FF8BF /* TTComposeTool.m */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		B3135B161C75772F000FF8BF /* Param */ = {
+			isa = PBXGroup;
+			children = (
+				B3135B171C75774A000FF8BF /* TTComposeParam.h */,
+				B3135B181C75774A000FF8BF /* TTComposeParam.m */,
+				B3D3651F1C7599FE003BB1EB /* TTUploadParam.h */,
+				B3D365201C7599FE003BB1EB /* TTUploadParam.m */,
+			);
+			path = Param;
 			sourceTree = "<group>";
 		};
 		B31486061C5CA7F200D43094 = {
@@ -544,6 +589,7 @@
 		B3766E991C696019006790BC /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				B3135B151C7576C0000FF8BF /* Compose */,
 				B3BB05B61C6C686A00B605E1 /* Param */,
 				B3BB05B01C6C67DB00B605E1 /* User */,
 				B3BB05A01C6C32D600B605E1 /* Status */,
@@ -1158,6 +1204,7 @@
 				B3C813451C5F2482002A37C5 /* TTMessageViewController.m in Sources */,
 				B30EBFE01C6DCD8000AFD00A /* TTOriginalView.m in Sources */,
 				B3C813231C5E041F002A37C5 /* main.m in Sources */,
+				B3135B141C756AF4000FF8BF /* TTComposePhotosView.m in Sources */,
 				B3766F101C69FF12006790BC /* MJType.m in Sources */,
 				B3BB05B51C6C67ED00B605E1 /* TTUserParam.m in Sources */,
 				B3766E981C695A32006790BC /* TTAccount.m in Sources */,
@@ -1169,6 +1216,7 @@
 				B3766EF81C69EE42006790BC /* MJRefreshFooterView.m in Sources */,
 				B30EBFE31C6DCEE400AFD00A /* TTRetweetView.m in Sources */,
 				B3766EF71C69EE42006790BC /* MJRefreshConst.m in Sources */,
+				B3135B0E1C74AA49000FF8BF /* TTTextView.m in Sources */,
 				B3BB05BC1C6C69F800B605E1 /* TTUserResult.m in Sources */,
 				B3766E851C65C3C8006790BC /* TTNewFeatureCell.m in Sources */,
 				B3766F131C69FF12006790BC /* NSObject+MJKeyValue.m in Sources */,
@@ -1176,6 +1224,7 @@
 				B3C813391C5F014F002A37C5 /* TTPopMenu.m in Sources */,
 				B3BB05B91C6C688000B605E1 /* TTBaseParam.m in Sources */,
 				B3766EF61C69EE42006790BC /* MJRefreshBaseView.m in Sources */,
+				B3135B1C1C757776000FF8BF /* TTComposeTool.m in Sources */,
 				B3766EDD1C69D358006790BC /* TTStatus.m in Sources */,
 				B3766EFC1C69EE42006790BC /* UIView+MJExtension.m in Sources */,
 				B3C8134E1C5F2859002A37C5 /* TTBadgeView.m in Sources */,
@@ -1205,9 +1254,12 @@
 				B3C813331C5EF974002A37C5 /* TTNavigationController.m in Sources */,
 				B3766F111C69FF12006790BC /* NSObject+MJCoding.m in Sources */,
 				B3C8131F1C5E041F002A37C5 /* TTTabBarController.m in Sources */,
+				B3135B111C755C00000FF8BF /* TTComposeToolBar.m in Sources */,
 				B3766F121C69FF12006790BC /* NSObject+MJIvar.m in Sources */,
+				B3D365211C7599FE003BB1EB /* TTUploadParam.m in Sources */,
 				B3766EDA1C69A8F2006790BC /* TTRootTool.m in Sources */,
 				B3C8133C1C5F0498002A37C5 /* TTCover.m in Sources */,
+				B3135B191C75774A000FF8BF /* TTComposeParam.m in Sources */,
 				B3C8132D1C5E11FD002A37C5 /* TTSearchBar.m in Sources */,
 				B3BB05A81C6C556000B605E1 /* TTStatusParam.m in Sources */,
 				B30EBFEA1C6DE19F00AFD00A /* TTStatusFrame.m in Sources */,
